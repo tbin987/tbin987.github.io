@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Access,LocalDB,SQL CE,SQL Server,SQLite,資料庫," />
+  <meta name="keywords" content="SQL Server,Access,LocalDB,SQL CE,SQLite,資料庫," />
 
 
 
@@ -82,10 +82,10 @@
 
 
 <meta name="description" content="在用了許久的ADO with Access之後，有感於這種資料庫的限制及困擾，一直以來都在尋找替代方案。因了原本接手開發的軟體在資料庫這塊一直都是雜亂且散佈於各模組內，雖然有想用其他的資料庫取而代之，但是更改底層資料庫不是件簡單的事，就只好一直沿用了。 而今，即將開發一全新系統，想當然爾對於要採用的資料庫的評估就是件很">
-<meta name="keywords" content="Access,LocalDB,SQL CE,SQL Server,SQLite,資料庫">
+<meta name="keywords" content="SQL Server,Access,LocalDB,SQL CE,SQLite,資料庫">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SQL 資料庫評估">
-<meta property="og:url" content="http://techandlife.cc/2012/05/07/sql-database-evaluation/index.html">
+<meta property="og:url" content="https://tbin987.github.io/2012/05/07/sql-database-evaluation/index.html">
 <meta property="og:site_name" content="Tech &amp; Life">
 <meta property="og:description" content="在用了許久的ADO with Access之後，有感於這種資料庫的限制及困擾，一直以來都在尋找替代方案。因了原本接手開發的軟體在資料庫這塊一直都是雜亂且散佈於各模組內，雖然有想用其他的資料庫取而代之，但是更改底層資料庫不是件簡單的事，就只好一直沿用了。 而今，即將開發一全新系統，想當然爾對於要採用的資料庫的評估就是件很重要的事了。因為即將要開發的系統是運作在32位元Windows底下，所以就針對幾">
 <meta property="og:locale" content="en">
@@ -122,7 +122,7 @@
 
 
 
-  <link rel="canonical" href="http://techandlife.cc/2012/05/07/sql-database-evaluation/"/>
+  <link rel="canonical" href="https://tbin987.github.io/2012/05/07/sql-database-evaluation/"/>
 
 
 
@@ -133,6 +133,15 @@
 
 
 
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-109842982-1', 'auto');
+  ga('send', 'pageview');
+</script>
 
 
 
@@ -275,7 +284,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://techandlife.cc/2012/05/07/sql-database-evaluation/">
+    <link itemprop="mainEntityOfPage" href="https://tbin987.github.io/2012/05/07/sql-database-evaluation/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="tbin987">
@@ -441,18 +450,36 @@
     
 
     
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:</strong>
+    tbin987
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link:</strong>
+    <a href="https://tbin987.github.io/2012/05/07/sql-database-evaluation/" title="SQL 資料庫評估">https://tbin987.github.io/2012/05/07/sql-database-evaluation/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice: </strong>
+    All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="external nofollow" target="_blank">CC BY-SA 4.0</a> unless stating additionally.
+  </li>
+</ul>
+
+      </div>
+    
 
     <footer class="post-footer">
       
         <div class="post-tags">
+          
+            <a href="/tags/SQL-Server/" rel="tag"># SQL Server</a>
           
             <a href="/tags/Access/" rel="tag"># Access</a>
           
             <a href="/tags/LocalDB/" rel="tag"># LocalDB</a>
           
             <a href="/tags/SQL-CE/" rel="tag"># SQL CE</a>
-          
-            <a href="/tags/SQL-Server/" rel="tag"># SQL Server</a>
           
             <a href="/tags/SQLite/" rel="tag"># SQLite</a>
           
@@ -479,7 +506,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2012/06/03/windows-server-2012-rc-early-adopters-(1)-instalation-articles/" rel="prev" title="Windows Server 2012 RC 嘗鮮 (1) 安裝篇">
+              <a href="/2012/06/03/windows-server-2012-rc-taste-1-instalation-articles/" rel="prev" title="Windows Server 2012 RC 嘗鮮 (1) 安裝篇">
                 Windows Server 2012 RC 嘗鮮 (1) 安裝篇 <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -590,6 +617,14 @@
 
           <div class="links-of-author motion-element">
             
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/tbin987" target="_blank" title="GitHub">
+                    
+                      <i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+            
           </div>
 
           
@@ -635,7 +670,7 @@
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.3</div>
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a></div>
 
 
 

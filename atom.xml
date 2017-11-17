@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://techandlife.cc/"/>
+  <link href="https://tbin987.github.io/"/>
   <updated>2017-11-17T15:35:16.573Z</updated>
-  <id>http://techandlife.cc/</id>
+  <id>https://tbin987.github.io/</id>
   
   <author>
     <name>tbin987</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>建立用於安裝Windows的USB隨身碟</title>
-    <link href="http://techandlife.cc/2012/11/04/create-a-usb-flash-drive-to-instal-windows/"/>
-    <id>http://techandlife.cc/2012/11/04/create-a-usb-flash-drive-to-instal-windows/</id>
+    <link href="https://tbin987.github.io/2012/11/04/create-a-usb-flash-drive-to-instal-windows/"/>
+    <id>https://tbin987.github.io/2012/11/04/create-a-usb-flash-drive-to-instal-windows/</id>
     <published>2012-11-04T14:42:00.000Z</published>
     <updated>2017-11-17T15:35:16.573Z</updated>
     
@@ -29,19 +29,19 @@
     
     </summary>
     
-      <category term="技術分享" scheme="http://techandlife.cc/categories/TechShare/"/>
+      <category term="技術分享" scheme="https://tbin987.github.io/categories/TechShare/"/>
     
     
-      <category term="USB開機" scheme="http://techandlife.cc/tags/USB%E9%96%8B%E6%A9%9F/"/>
+      <category term="USB開機" scheme="https://tbin987.github.io/tags/USB%E9%96%8B%E6%A9%9F/"/>
     
-      <category term="Windows" scheme="http://techandlife.cc/tags/Windows/"/>
+      <category term="Windows" scheme="https://tbin987.github.io/tags/Windows/"/>
     
   </entry>
   
   <entry>
     <title>建置DCMTK</title>
-    <link href="http://techandlife.cc/2012/09/02/build-dcmtk/"/>
-    <id>http://techandlife.cc/2012/09/02/build-dcmtk/</id>
+    <link href="https://tbin987.github.io/2012/09/02/build-dcmtk/"/>
+    <id>https://tbin987.github.io/2012/09/02/build-dcmtk/</id>
     <published>2012-09-02T12:45:00.000Z</published>
     <updated>2017-11-17T15:35:02.514Z</updated>
     
@@ -52,19 +52,19 @@
     
     </summary>
     
-      <category term="程式設計" scheme="http://techandlife.cc/categories/Programming/"/>
+      <category term="程式設計" scheme="https://tbin987.github.io/categories/Programming/"/>
     
     
-      <category term="DCMTK" scheme="http://techandlife.cc/tags/DCMTK/"/>
+      <category term="DCMTK" scheme="https://tbin987.github.io/tags/DCMTK/"/>
     
-      <category term="DICOM" scheme="http://techandlife.cc/tags/DICOM/"/>
+      <category term="DICOM" scheme="https://tbin987.github.io/tags/DICOM/"/>
     
   </entry>
   
   <entry>
     <title>TFS 2012 RC in Server 2012 RC - Error TF400534</title>
-    <link href="http://techandlife.cc/2012/07/07/tfs-2012-rc-in-server-2012-rc-eror-tf40534/"/>
-    <id>http://techandlife.cc/2012/07/07/tfs-2012-rc-in-server-2012-rc-eror-tf40534/</id>
+    <link href="https://tbin987.github.io/2012/07/07/tfs-2012-rc-in-server-2012-rc-eror-tf40534/"/>
+    <id>https://tbin987.github.io/2012/07/07/tfs-2012-rc-in-server-2012-rc-eror-tf40534/</id>
     <published>2012-07-07T11:28:00.000Z</published>
     <updated>2017-11-17T15:35:22.315Z</updated>
     
@@ -75,21 +75,21 @@
     
     </summary>
     
-      <category term="技術分享" scheme="http://techandlife.cc/categories/TechShare/"/>
+      <category term="技術分享" scheme="https://tbin987.github.io/categories/TechShare/"/>
     
     
-      <category term="Team Foundation Server" scheme="http://techandlife.cc/tags/Team-Foundation-Server/"/>
+      <category term="Team Foundation Server" scheme="https://tbin987.github.io/tags/Team-Foundation-Server/"/>
     
-      <category term="Windows Server 2012" scheme="http://techandlife.cc/tags/Windows-Server-2012/"/>
+      <category term="Windows Server 2012" scheme="https://tbin987.github.io/tags/Windows-Server-2012/"/>
     
   </entry>
   
   <entry>
     <title>Windows Server 2012 RC 嘗鮮 (2) 安裝SQL</title>
-    <link href="http://techandlife.cc/2012/07/03/windows-server-2012-rc-early-adopters-(2)-to-instal-sql/"/>
-    <id>http://techandlife.cc/2012/07/03/windows-server-2012-rc-early-adopters-(2)-to-instal-sql/</id>
+    <link href="https://tbin987.github.io/2012/07/03/windows-server-2012-rc-taste-2-to-instal-sql/"/>
+    <id>https://tbin987.github.io/2012/07/03/windows-server-2012-rc-taste-2-to-instal-sql/</id>
     <published>2012-07-03T14:57:00.000Z</published>
-    <updated>2017-11-17T15:35:30.105Z</updated>
+    <updated>2017-11-17T16:08:43.633Z</updated>
     
     <summary type="html">
     
@@ -98,23 +98,23 @@
     
     </summary>
     
-      <category term="技術分享" scheme="http://techandlife.cc/categories/TechShare/"/>
+      <category term="技術分享" scheme="https://tbin987.github.io/categories/TechShare/"/>
     
     
-      <category term="SQL Server" scheme="http://techandlife.cc/tags/SQL-Server/"/>
+      <category term="Windows Server 2012" scheme="https://tbin987.github.io/tags/Windows-Server-2012/"/>
     
-      <category term="Windows Server 2012" scheme="http://techandlife.cc/tags/Windows-Server-2012/"/>
+      <category term="SQL Server" scheme="https://tbin987.github.io/tags/SQL-Server/"/>
     
-      <category term="SQL Server 2012" scheme="http://techandlife.cc/tags/SQL-Server-2012/"/>
+      <category term="SQL Server 2012" scheme="https://tbin987.github.io/tags/SQL-Server-2012/"/>
     
   </entry>
   
   <entry>
     <title>Windows Server 2012 RC 嘗鮮 (1) 安裝篇</title>
-    <link href="http://techandlife.cc/2012/06/03/windows-server-2012-rc-early-adopters-(1)-instalation-articles/"/>
-    <id>http://techandlife.cc/2012/06/03/windows-server-2012-rc-early-adopters-(1)-instalation-articles/</id>
+    <link href="https://tbin987.github.io/2012/06/03/windows-server-2012-rc-taste-1-instalation-articles/"/>
+    <id>https://tbin987.github.io/2012/06/03/windows-server-2012-rc-taste-1-instalation-articles/</id>
     <published>2012-06-03T06:52:00.000Z</published>
-    <updated>2017-11-17T15:35:26.793Z</updated>
+    <updated>2017-11-17T16:08:33.440Z</updated>
     
     <summary type="html">
     
@@ -123,17 +123,17 @@
     
     </summary>
     
-      <category term="技術分享" scheme="http://techandlife.cc/categories/TechShare/"/>
+      <category term="技術分享" scheme="https://tbin987.github.io/categories/TechShare/"/>
     
     
-      <category term="Windows Server 2012" scheme="http://techandlife.cc/tags/Windows-Server-2012/"/>
+      <category term="Windows Server 2012" scheme="https://tbin987.github.io/tags/Windows-Server-2012/"/>
     
   </entry>
   
   <entry>
     <title>SQL 資料庫評估</title>
-    <link href="http://techandlife.cc/2012/05/07/sql-database-evaluation/"/>
-    <id>http://techandlife.cc/2012/05/07/sql-database-evaluation/</id>
+    <link href="https://tbin987.github.io/2012/05/07/sql-database-evaluation/"/>
+    <id>https://tbin987.github.io/2012/05/07/sql-database-evaluation/</id>
     <published>2012-05-06T16:05:00.000Z</published>
     <updated>2017-11-17T15:35:19.722Z</updated>
     
@@ -151,27 +151,27 @@
     
     </summary>
     
-      <category term="技術分享" scheme="http://techandlife.cc/categories/TechShare/"/>
+      <category term="技術分享" scheme="https://tbin987.github.io/categories/TechShare/"/>
     
     
-      <category term="Access" scheme="http://techandlife.cc/tags/Access/"/>
+      <category term="SQL Server" scheme="https://tbin987.github.io/tags/SQL-Server/"/>
     
-      <category term="LocalDB" scheme="http://techandlife.cc/tags/LocalDB/"/>
+      <category term="Access" scheme="https://tbin987.github.io/tags/Access/"/>
     
-      <category term="SQL CE" scheme="http://techandlife.cc/tags/SQL-CE/"/>
+      <category term="LocalDB" scheme="https://tbin987.github.io/tags/LocalDB/"/>
     
-      <category term="SQL Server" scheme="http://techandlife.cc/tags/SQL-Server/"/>
+      <category term="SQL CE" scheme="https://tbin987.github.io/tags/SQL-CE/"/>
     
-      <category term="SQLite" scheme="http://techandlife.cc/tags/SQLite/"/>
+      <category term="SQLite" scheme="https://tbin987.github.io/tags/SQLite/"/>
     
-      <category term="資料庫" scheme="http://techandlife.cc/tags/%E8%B3%87%E6%96%99%E5%BA%AB/"/>
+      <category term="資料庫" scheme="https://tbin987.github.io/tags/%E8%B3%87%E6%96%99%E5%BA%AB/"/>
     
   </entry>
   
   <entry>
     <title>台鐵汐科站</title>
-    <link href="http://techandlife.cc/2007/12/30/taiwan-railway-station/"/>
-    <id>http://techandlife.cc/2007/12/30/taiwan-railway-station/</id>
+    <link href="https://tbin987.github.io/2007/12/30/taiwan-railway-station/"/>
+    <id>https://tbin987.github.io/2007/12/30/taiwan-railway-station/</id>
     <published>2007-12-30T15:38:00.000Z</published>
     <updated>2017-11-17T09:37:51.357Z</updated>
     
@@ -182,10 +182,10 @@
     
     </summary>
     
-      <category term="Life" scheme="http://techandlife.cc/categories/Life/"/>
+      <category term="Life" scheme="https://tbin987.github.io/categories/Life/"/>
     
     
-      <category term="鐵道" scheme="http://techandlife.cc/tags/%E9%90%B5%E9%81%93/"/>
+      <category term="鐵道" scheme="https://tbin987.github.io/tags/%E9%90%B5%E9%81%93/"/>
     
   </entry>
   
