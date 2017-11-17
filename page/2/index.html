@@ -81,7 +81,7 @@
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Tech &amp; Life">
-<meta property="og:url" content="http://techandlife.cc/index.html">
+<meta property="og:url" content="http://techandlife.cc/page/2/index.html">
 <meta property="og:site_name" content="Tech &amp; Life">
 <meta property="og:locale" content="en">
 <meta name="twitter:card" content="summary">
@@ -115,7 +115,7 @@
 
 
 
-  <link rel="canonical" href="http://techandlife.cc/"/>
+  <link rel="canonical" href="http://techandlife.cc/page/2/"/>
 
 
 
@@ -259,7 +259,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://techandlife.cc/2012/11/04/create-a-usb-flash-drive-to-instal-windows/">
+    <link itemprop="mainEntityOfPage" href="http://techandlife.cc/2012/05/07/sql-database-evaluation/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="tbin987">
@@ -278,7 +278,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2012/11/04/create-a-usb-flash-drive-to-instal-windows/" itemprop="url">建立用於安裝Windows的USB隨身碟</a></h1>
+                <a class="post-title-link" href="/2012/05/07/sql-database-evaluation/" itemprop="url">SQL 資料庫評估</a></h1>
         
 
         <div class="post-meta">
@@ -290,8 +290,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2012-11-04T22:42:00+08:00">
-                2012-11-04
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2012-05-07T00:05:00+08:00">
+                2012-05-07
               </time>
             
 
@@ -329,10 +329,18 @@
 
       
         
-          <p>在現今光碟機式微、USB隨身碟當道的情形下，使用USB隨身碟來當作安裝作業系統的媒介已經越來越普遍了，甚至連微軟自身都推出一支程式(<a href="http://www.microsoftstore.com/store/msstore/html/pbPage.Help_Win7_usbdvd_dwnTool" target="_blank" rel="noopener">Windows 7 USB/DVD download tool</a>)來將光碟轉入USB隨身碟，而利用USB隨身碟來安裝系統相對於使用光碟也有著不少的優點，在愈來愈多人詢問如何建立一支可以用來開機及安裝Windows的隨身碟的情況下，在這就將我製作的步驟寫下，讓有需求的人可以利用囉。<br>
+          <p>在用了許久的ADO with Access之後，有感於這種資料庫的限制及困擾，一直以來都在尋找替代方案。因了原本接手開發的軟體在資料庫這塊一直都是雜亂且散佈於各模組內，雖然有想用其他的資料庫取而代之，但是更改底層資料庫不是件簡單的事，就只好一直沿用了。</p>
+<p>而今，即將開發一全新系統，想當然爾對於要採用的資料庫的評估就是件很重要的事了。因為即將要開發的系統是運作在32位元Windows底下，所以就針對幾項常見的資料庫，做了個簡單的評估：</p>
+<ul>
+<li>Access</li>
+<li>SQL Server</li>
+<li>SQL Server Express</li>
+<li>SQL Server Compact Edition (SQL CE)</li>
+<li>SQL Server LocalDB</li>
+<li>SQLite
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2012/11/04/create-a-usb-flash-drive-to-instal-windows/#more" rel="contents">
+            <a class="btn" href="/2012/05/07/sql-database-evaluation/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -383,7 +391,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://techandlife.cc/2012/09/02/build-dcmtk/">
+    <link itemprop="mainEntityOfPage" href="http://techandlife.cc/2007/12/30/taiwan-railway-station/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="tbin987">
@@ -402,7 +410,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2012/09/02/build-dcmtk/" itemprop="url">建置DCMTK</a></h1>
+                <a class="post-title-link" href="/2007/12/30/taiwan-railway-station/" itemprop="url">台鐵汐科站</a></h1>
         
 
         <div class="post-meta">
@@ -414,8 +422,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2012-09-02T20:45:00+08:00">
-                2012-09-02
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2007-12-30T23:38:00+08:00">
+                2007-12-30
               </time>
             
 
@@ -453,386 +461,11 @@
 
       
         
-          <p>DCMTK 3.6.0發布囉：<br><a href="http://dicom.offis.de/dcmtk" target="_blank" rel="noopener">http://dicom.offis.de/dcmtk</a></p>
-<p>上一次建置DCMTK時，還是3.5.3版加上VC2005，現在3.6.0版已經發布，且VC也已經發行到2012年版了。鑒於上一次建置已經有一段時間了，再加上當時僅建置DCMTK函式庫本身，並沒將外部函式庫一併建置，所以這次建置就順便來做個紀錄吧。</p>
+          <p>等了好久，台鐵汐科站終於趕在2007年底前的12/30通車啦！</p>
+<p><a href="http://bp2.blogger.com/_zf3Yi1MVc9c/R3e79HuxgsI/AAAAAAAAAEc/qhRvEocdKPU/s1600-h/021.jpg" target="_blank" rel="noopener"><img src="http://bp2.blogger.com/_zf3Yi1MVc9c/R3e79HuxgsI/AAAAAAAAAEc/qhRvEocdKPU/s320/021.jpg" alt=""></a><br>汐科站屬於「臺鐵捷運化先期計畫」之一，是繼三坑、百福站之後，在北部地區第三個增設的捷運化車站。車站就位於台鐵汐止高架段起點的引道上，除了車站處於斜坡外，整個月台還呈現S形，而且站體還分成南北兩個獨立站體，算是個蠻有特色的車站。</p>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2012/09/02/build-dcmtk/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://techandlife.cc/2012/07/07/tfs-2012-rc-in-server-2012-rc-eror-tf40534/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="tbin987">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Tech & Life">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2012/07/07/tfs-2012-rc-in-server-2012-rc-eror-tf40534/" itemprop="url">TFS 2012 RC in Server 2012 RC - Error TF400534</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2012-07-07T19:28:00+08:00">
-                2012-07-07
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>在Windows Server 2012 RC上安裝Team Foundation Server 2012 RC時，在一開始安裝就出現錯誤：</p>
-<p>Error : TF400534: 封裝(tfs_objectmodel_x64_lang) 快取失敗，狀態為: 0x80092009。<br>Error : TF400166: 封裝快取失敗。 如需詳細資訊，請查閱個別封裝的快取錯誤。</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2012/07/07/tfs-2012-rc-in-server-2012-rc-eror-tf40534/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://techandlife.cc/2012/07/03/windows-server-2012-rc-early-adopters-(2)-to-instal-sql/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="tbin987">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Tech & Life">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2012/07/03/windows-server-2012-rc-early-adopters-(2)-to-instal-sql/" itemprop="url">Windows Server 2012 RC 嘗鮮 (2) 安裝SQL</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2012-07-03T22:57:00+08:00">
-                2012-07-03
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>Server安裝完後，最重要的就是要安裝一些伺服器應用程式了，剛好，微軟這時同時也發布了好幾項產品，例如Visual Studio 2012 RC以及Team Foundation Server 2012 RC，所以剛裝好的Windows Server 2012 RC就可以拿來裝上TFS來玩玩囉。</p>
-<p>在安裝TFS之前，首先要安裝的是SQL Server，雖然TFS預設會安裝上SQL Server Express，但預設並不會裝上管理工具，所以只好自己手動來安裝了。</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2012/07/03/windows-server-2012-rc-early-adopters-(2)-to-instal-sql/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://techandlife.cc/2012/06/03/windows-server-2012-rc-early-adopters-(1)-instalation-articles/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="tbin987">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Tech & Life">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2012/06/03/windows-server-2012-rc-early-adopters-(1)-instalation-articles/" itemprop="url">Windows Server 2012 RC 嘗鮮 (1) 安裝篇</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2012-06-03T14:52:00+08:00">
-                2012-06-03
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>隨著Windows 8 Release Preview的發佈，Server版本也悄悄現身啦</p>
-<div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-tQ5x5TwusAg/T8r45qC9QMI/AAAAAAAACJo/1oq6Am67y0I/s1600/20120603134242.png" target="_blank" rel="noopener"><img src="http://1.bp.blogspot.com/-tQ5x5TwusAg/T8r45qC9QMI/AAAAAAAACJo/1oq6Am67y0I/s320/20120603134242.png" alt=""></a></div><a href="http://technet.microsoft.com/zh-tw/windowsserver/hh534429.aspx" target="_blank" rel="noopener">http://technet.microsoft.com/zh-tw/windowsserver/hh534429.aspx</a><br><br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2012/06/03/windows-server-2012-rc-early-adopters-(1)-instalation-articles/#more" rel="contents">
+            <a class="btn" href="/2007/12/30/taiwan-railway-station/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -874,7 +507,7 @@
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
   </nav>
 
 
