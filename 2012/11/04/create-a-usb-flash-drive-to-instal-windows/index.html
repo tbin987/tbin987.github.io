@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.3">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="USB開機,Windows," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="在現今光碟機式微、USB隨身碟當道的情形下，使用USB隨身碟來當作安裝作業系統的媒介已經越來越普遍了，甚至連微軟自身都推出一支程式(Windows 7 USB/DVD download tool)來將光碟轉入USB隨身碟，而利用USB隨身碟來安裝系統相對於使用光碟也有著不少的優點，在愈來愈多人詢問如何建立一支可以用來開">
+<meta name="keywords" content="USB開機,Windows">
+<meta property="og:type" content="article">
+<meta property="og:title" content="建立用於安裝Windows的USB隨身碟">
+<meta property="og:url" content="http://techandlife.cc/2012/11/04/create-a-usb-flash-drive-to-instal-windows/index.html">
+<meta property="og:site_name" content="Tech &amp; Life">
+<meta property="og:description" content="在現今光碟機式微、USB隨身碟當道的情形下，使用USB隨身碟來當作安裝作業系統的媒介已經越來越普遍了，甚至連微軟自身都推出一支程式(Windows 7 USB/DVD download tool)來將光碟轉入USB隨身碟，而利用USB隨身碟來安裝系統相對於使用光碟也有著不少的優點，在愈來愈多人詢問如何建立一支可以用來開機及安裝Windows的隨身碟的情況下，在這就將我製作的步驟寫下，讓有需求的人可">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="http://2.bp.blogspot.com/-UQN0Y_Hh4_E/UJZoQQsYSpI/AAAAAAAAC8I/KCaqX0X9qNw/s1600/16.png">
+<meta property="og:image" content="http://3.bp.blogspot.com/-O8sx57FgDq0/UJZpegtxcEI/AAAAAAAAC8Q/L-Di8-A5Q6M/s1600/17.png">
+<meta property="og:image" content="http://3.bp.blogspot.com/-9iGsyNUKt7g/UJZlaMgeNfI/AAAAAAAAC6M/Ve2klwr26rw/s320/01.png">
+<meta property="og:image" content="http://4.bp.blogspot.com/-4zRLNPbN0So/UJZlaPepj1I/AAAAAAAAC6I/o6SSeX63RGE/s320/02.png">
+<meta property="og:image" content="http://3.bp.blogspot.com/-I7977t9si2M/UJZlaL6uPRI/AAAAAAAAC6Q/H7st7zESM84/s320/03.png">
+<meta property="og:image" content="http://1.bp.blogspot.com/-aCLROQUdWcE/UJZlanTrHmI/AAAAAAAAC6Y/5JafPmhXe0U/s320/04.png">
+<meta property="og:image" content="http://4.bp.blogspot.com/-F8IDcqkvu9o/UJZlbgAtBAI/AAAAAAAAC6o/x3skY3H627k/s320/05.png">
+<meta property="og:image" content="http://1.bp.blogspot.com/-0IYSGvXOwAo/UJZlbP3OKcI/AAAAAAAAC6c/QcKze1ILjIE/s320/06.png">
+<meta property="og:image" content="http://2.bp.blogspot.com/-FaW8XIR9WLY/UJZlbizYnHI/AAAAAAAAC6k/_x1VBnLBipw/s320/07.png">
+<meta property="og:image" content="http://4.bp.blogspot.com/-2l0skzUoMpc/UJZldH6b7II/AAAAAAAAC7A/A6heczuJMnk/s320/09.png">
+<meta property="og:image" content="http://4.bp.blogspot.com/-ZpZa9V6HBLQ/UJZldLciW0I/AAAAAAAAC68/M98bCNWqFUo/s320/10.png">
+<meta property="og:image" content="http://2.bp.blogspot.com/-anvIBLDp-iA/UJZldvpxyDI/AAAAAAAAC7E/Ylv5KIkAA9Q/s320/11.png">
+<meta property="og:image" content="http://2.bp.blogspot.com/-_PokDhpxQLA/UJZle04f5eI/AAAAAAAAC7Y/_jtzt4Oa92Q/s1600/12.png">
+<meta property="og:image" content="http://3.bp.blogspot.com/-mzis_t5HwEA/UJZliP1pLZI/AAAAAAAAC7g/6hHJZieUFPc/s320/13.png">
+<meta property="og:image" content="http://3.bp.blogspot.com/-3g8SJkjeQc4/UJZnCiZnZhI/AAAAAAAAC8A/EZUHuWNdbMQ/s320/15.png">
+<meta property="og:updated_time" content="2017-11-17T06:18:34.700Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="建立用於安裝Windows的USB隨身碟">
+<meta name="twitter:description" content="在現今光碟機式微、USB隨身碟當道的情形下，使用USB隨身碟來當作安裝作業系統的媒介已經越來越普遍了，甚至連微軟自身都推出一支程式(Windows 7 USB/DVD download tool)來將光碟轉入USB隨身碟，而利用USB隨身碟來安裝系統相對於使用光碟也有著不少的優點，在愈來愈多人詢問如何建立一支可以用來開機及安裝Windows的隨身碟的情況下，在這就將我製作的步驟寫下，讓有需求的人可">
+<meta name="twitter:image" content="http://2.bp.blogspot.com/-UQN0Y_Hh4_E/UJZoQQsYSpI/AAAAAAAAC8I/KCaqX0X9qNw/s1600/16.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.3',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://techandlife.cc/2012/11/04/create-a-usb-flash-drive-to-instal-windows/"/>
+
+
+
+
+
+  <title>建立用於安裝Windows的USB隨身碟 | Tech & Life</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Tech & Life</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://techandlife.cc/2012/11/04/create-a-usb-flash-drive-to-instal-windows/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="tbin987">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Tech & Life">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">建立用於安裝Windows的USB隨身碟</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2012-11-04T22:42:00+08:00">
+                2012-11-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>在現今光碟機式微、USB隨身碟當道的情形下，使用USB隨身碟來當作安裝作業系統的媒介已經越來越普遍了，甚至連微軟自身都推出一支程式(<a href="http://www.microsoftstore.com/store/msstore/html/pbPage.Help_Win7_usbdvd_dwnTool" target="_blank" rel="noopener">Windows 7 USB/DVD download tool</a>)來將光碟轉入USB隨身碟，而利用USB隨身碟來安裝系統相對於使用光碟也有著不少的優點，在愈來愈多人詢問如何建立一支可以用來開機及安裝Windows的隨身碟的情況下，在這就將我製作的步驟寫下，讓有需求的人可以利用囉。<br><a id="more"></a></p>
+<p>要建立可開機及安裝的USB隨身碟，網路上也流傳著許多不同的方法，我是使用<a href="http://www.rmprepusb.com/" target="_blank" rel="noopener">RMPrepUSB</a>這支程式來建立的，因為利用這支程式可以很簡單地客製化USB隨身碟，相容性也較高些，所以這方法就是目前的首選囉。</p>
+<p>關於RMPrepUSB這支程式，官方網站有不少教學文章可以參考，我最初也是參考&nbsp;<a href="http://www.rmprepusb.com/tutorials/winiso" target="_blank" rel="noopener">Tutorial&nbsp;31</a>&nbsp;這篇文章來建立USB隨身碟的，但陸續又有許多強者研究出其他方法，所以現在用的已經改為 &nbsp;<a href="http://www.rmprepusb.com/tutorials/firawiniso" target="_blank" rel="noopener">Tutorial 43</a>&nbsp;的方式了，有興趣的可以參考下列教學：</p>
+<ul>
+<li><a href="http://www.rmprepusb.com/tutorials/winiso" target="_blank" rel="noopener">Tutorial 31 - Boot and install Windows 7 or Vista or Server 2008 (both 32 and 64 bit) from ISO files from a single bootable USB install drive</a></li>
+<li><a href="http://www.rmprepusb.com/tutorials/multiisoimdiskautounattend" target="_blank" rel="noopener">Tutorial 32 -&nbsp;Create a USB drive with multiple Vista/Win7/Server2008 install ISO files in 3 simple steps</a></li>
+<li><a href="http://www.rmprepusb.com/tutorials/firawiniso" target="_blank" rel="noopener">Tutorial 43 -&nbsp;Install Windows 8, Server 2012, Win 7, 2K8 &amp; Vista from multiple ISO files on the same Flash drive</a></li>
+<li><a href="http://www.rmprepusb.com/tutorials/install-xp-from-an-iso" target="_blank" rel="noopener">Tutorial 30 -&nbsp;How to install XP onto a Hard Disk from an XP ISO on a bootable USB drive</a></li>
+</ul>
+<p>廢話不多說，下面就是建立USB開機隨身碟的步驟：</p>
+<p>1. 首先，到<a href="http://www.rmprepusb.com/documents/release-2-0" target="_blank" rel="noopener">RMPrepUSB</a>的官方網站下載最新版的軟體，並且安裝到系統中。</p>
+<p>2. 下載所需用到的 <a href="http://www.rmprepusb.com/documents/rmprepusb-beta-versions/Tut43_FiraIso.zip?attredirects=0" target="_blank" rel="noopener">Tut43_FiraIso.zip</a> 檔案(<a href="http://www.rmprepusb.com/documents/rmprepusb-beta-versions" target="_blank" rel="noopener">下載網頁</a>)，並將壓縮檔解壓至本機硬碟中(如：F:\BootUSB，以下稱”前置作業資料夾”)</p>
+<div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-UQN0Y_Hh4_E/UJZoQQsYSpI/AAAAAAAAC8I/KCaqX0X9qNw/s1600/16.png" target="_blank" rel="noopener"><img src="http://2.bp.blogspot.com/-UQN0Y_Hh4_E/UJZoQQsYSpI/AAAAAAAAC8I/KCaqX0X9qNw/s1600/16.png" alt=""></a></div>
+
+<p>3. 將要用來開機的Windows安裝光碟映像ISO檔準備好，並複製到[ISO]資料夾下。<br><a href="http://3.bp.blogspot.com/-O8sx57FgDq0/UJZpegtxcEI/AAAAAAAAC8Q/L-Di8-A5Q6M/s1600/17.png" target="_blank" rel="noopener"><img src="http://3.bp.blogspot.com/-O8sx57FgDq0/UJZpegtxcEI/AAAAAAAAC8Q/L-Di8-A5Q6M/s1600/17.png" alt=""></a></p>
+<p>4. 使用文字編輯器(如Notepad)開啟[Menu.lst]檔案，找到如下方所顯示的區段：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&gt; title 1 INSTALL Windows 7 32-bit\nThis will install any edition of Windows 32-bit to your hard disk</span><br><span class="line">&gt; debug off</span><br><span class="line">&gt; set MYISO=win7.iso</span><br><span class="line">&gt; dd if=()/firadisk/au.xml of=()/AutoUnattend.xml</span><br><span class="line">&gt; dd if=()/firadisk/spaces.txt of=()/firadisk/ISONAME.CMD</span><br><span class="line">&gt; write ()/firadisk/ISONAME.CMD SET MYISO=\\iso\\%MYISO%\r\n</span><br><span class="line">&gt; map --mem (md)0x800+4 (99)</span><br><span class="line">&gt; map /ISO/%MYISO% (0xff)</span><br><span class="line">&gt; map (hd0) (hd1)</span><br><span class="line">&gt; map (hd1) (hd0)</span><br><span class="line">&gt; map --hook</span><br><span class="line">&gt; write (99) [FiraDisk]\nStartOptions=cdrom,vmem=find:/ISO/%MYISO%;\n\0</span><br><span class="line">&gt; chainloader (0xff)/BOOTMGR || chainloader (0xff)</span><br></pre></td></tr></table></figure>
+<div class="note default"><p>第一行title的地方是將來開機時所顯示的文字選項，修改成所要顯示的文字項目即可(此處對於中文的支援性不佳，為避免無法使用，故請輸入英文)；第三行”set MYISO=xxx.iso”，將”win7.iso”換成所要用來開機的ISO檔名。(此處以安裝Windwos 7/Vista為例，其他作業系統可參考RMPrepUSB官網或見後續說明)</p></div>
+<div class="note info"><p>若要在USB中包含多個安裝ISO，可複製貼上上述區段，並修改黃底部分的文字即可，每個區段之間必須至少有一行空行。</p></div>
+<div class="note default"><p>Menu.lst檔案的編輯，可以<a href="http://lmgtfy.com/?q=grub4dos+menu.lst" target="_blank" rel="noopener">搜尋grub4dos</a>或grub的說明。</p></div>
+<p>5. 做好前置作業後，將欲製作成開機磁碟的USB隨身碟插入USB連接埠，開啟RMPrepUSB軟體。</p>
+<div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-9iGsyNUKt7g/UJZlaMgeNfI/AAAAAAAAC6M/Ve2klwr26rw/s1600/01.png" target="_blank" rel="noopener"><img src="http://3.bp.blogspot.com/-9iGsyNUKt7g/UJZlaMgeNfI/AAAAAAAAC6M/Ve2klwr26rw/s320/01.png" alt=""></a></div>
+
+<p>6. 在上方磁碟清單中選擇欲製作的那支USB隨身碟。</p>
+<p>7. 在[2.磁碟區標籤]輸入USB磁碟的標籤(選擇性項目，可不輸)；[3.開機選項]選擇”WinPE v2/WinPE v3/Vista/Win 7 bootable [BOOTMGR]”；[4.檔案系統和複寫]選擇”FAT32”，勾選”Boot as HDD (C: 2PTNS)”，(若ISO檔案大於4GB，檔案系統請選擇NTFS)；[5.如果勾選方塊…]點選[選擇複製資料夾]，選擇前置作業所放置檔案的資料夾(如：F:\BootUSB)</p>
+<p>如果跳出如下的視窗，請選擇[是]繼續：</p>
+<div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-4zRLNPbN0So/UJZlaPepj1I/AAAAAAAAC6I/o6SSeX63RGE/s1600/02.png" target="_blank" rel="noopener"><img src="http://4.bp.blogspot.com/-4zRLNPbN0So/UJZlaPepj1I/AAAAAAAAC6I/o6SSeX63RGE/s320/02.png" alt=""></a></div>
+
+<p>8. 完成後畫面將如下所示：</p>
+<div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-I7977t9si2M/UJZlaL6uPRI/AAAAAAAAC6Q/H7st7zESM84/s1600/03.png" target="_blank" rel="noopener"><img src="http://3.bp.blogspot.com/-I7977t9si2M/UJZlaL6uPRI/AAAAAAAAC6Q/H7st7zESM84/s320/03.png" alt=""></a></div>
+
+<p>9. 接者，按下[6.準備磁碟]開始製作開機USB隨身碟。</p>
+<p>10.首先是格式化磁碟，會跳出如下警告視窗，確認後點選[確定]繼續。</p>
+<div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-aCLROQUdWcE/UJZlanTrHmI/AAAAAAAAC6Y/5JafPmhXe0U/s1600/04.png" target="_blank" rel="noopener"><img src="http://1.bp.blogspot.com/-aCLROQUdWcE/UJZlanTrHmI/AAAAAAAAC6Y/5JafPmhXe0U/s320/04.png" alt=""></a></div><br><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-F8IDcqkvu9o/UJZlbgAtBAI/AAAAAAAAC6o/x3skY3H627k/s1600/05.png" target="_blank" rel="noopener"><img src="http://4.bp.blogspot.com/-F8IDcqkvu9o/UJZlbgAtBAI/AAAAAAAAC6o/x3skY3H627k/s320/05.png" alt=""></a></div><div class="separator" style="clear: both; text-align: center;"><br></div><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-0IYSGvXOwAo/UJZlbP3OKcI/AAAAAAAAC6c/QcKze1ILjIE/s1600/06.png" target="_blank" rel="noopener"><img src="http://1.bp.blogspot.com/-0IYSGvXOwAo/UJZlbP3OKcI/AAAAAAAAC6c/QcKze1ILjIE/s320/06.png" alt=""></a></div>
+
+<p>11. 當初線系統的複製視窗(如下圖)，請耐心等候複製完畢。(複製時間依檔案多寡及USB隨身碟的存取速度而異)</p>
+<div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-FaW8XIR9WLY/UJZlbizYnHI/AAAAAAAAC6k/_x1VBnLBipw/s1600/07.png" target="_blank" rel="noopener"><img src="http://2.bp.blogspot.com/-FaW8XIR9WLY/UJZlbizYnHI/AAAAAAAAC6k/_x1VBnLBipw/s320/07.png" alt=""></a></div>
+
+<p>12. 複製完畢後，回到RMPrepUSB程式介面，點選[安裝 Grub4dos]，會跳出如下視窗，請點選[是]將grub4dos安裝在MBR。</p>
+<div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-2l0skzUoMpc/UJZldH6b7II/AAAAAAAAC7A/A6heczuJMnk/s1600/09.png" target="_blank" rel="noopener"><img src="http://4.bp.blogspot.com/-2l0skzUoMpc/UJZldH6b7II/AAAAAAAAC7A/A6heczuJMnk/s320/09.png" alt=""></a></div><br>點選[確定]繼續安裝：<br><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-ZpZa9V6HBLQ/UJZldLciW0I/AAAAAAAAC68/M98bCNWqFUo/s1600/10.png" target="_blank" rel="noopener"><img src="http://4.bp.blogspot.com/-ZpZa9V6HBLQ/UJZldLciW0I/AAAAAAAAC68/M98bCNWqFUo/s320/10.png" alt=""></a></div><br>按下鍵盤的[ENTER]鍵繼續：<br><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-anvIBLDp-iA/UJZldvpxyDI/AAAAAAAAC7E/Ylv5KIkAA9Q/s1600/11.png" target="_blank" rel="noopener"><img src="http://2.bp.blogspot.com/-anvIBLDp-iA/UJZldvpxyDI/AAAAAAAAC7E/Ylv5KIkAA9Q/s320/11.png" alt=""></a></div><br>點選[確定]繼續：<br><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-_PokDhpxQLA/UJZle04f5eI/AAAAAAAAC7Y/_jtzt4Oa92Q/s1600/12.png" target="_blank" rel="noopener"><img src="http://2.bp.blogspot.com/-_PokDhpxQLA/UJZle04f5eI/AAAAAAAAC7Y/_jtzt4Oa92Q/s1600/12.png" alt=""></a></div>
+
+<p>13. 至此，開機USB隨身碟已製作完成，使用檔案總管開啟USB磁碟後，會看到類似如下的結構：</p>
+<div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-mzis_t5HwEA/UJZliP1pLZI/AAAAAAAAC7g/6hHJZieUFPc/s1600/13.png" target="_blank" rel="noopener"><img src="http://3.bp.blogspot.com/-mzis_t5HwEA/UJZliP1pLZI/AAAAAAAAC7g/6hHJZieUFPc/s320/13.png" alt=""></a></div>
+
+<p>14. 若要測試這支USB隨身碟是否可以正常運作，可以找台電腦，進入BIOS修改成以USB磁碟開機來測試，或是使用RMPrepUSB內含的QEMU來測試。要以QEMU來測試，點選[Test using QEMU Emulator (F11)]，當看到如下的畫面後，移動選擇光棒到開機項目按下[ENTER]進入開機安裝，若能正常進入安裝畫面，就表示製作成功。</p>
+<div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-3g8SJkjeQc4/UJZnCiZnZhI/AAAAAAAAC8A/EZUHuWNdbMQ/s1600/15.png" target="_blank" rel="noopener"><img src="http://3.bp.blogspot.com/-3g8SJkjeQc4/UJZnCiZnZhI/AAAAAAAAC8A/EZUHuWNdbMQ/s320/15.png" alt=""></a></div>
+
+<p>=======================================================================<br>進階用法</p>
+<p>A. 使用USB隨身碟來安裝Windows XP</p>
+<p>1. 因為Windows XP的開機方式與Vista之後使用bootmgr的方式不同，所以若要製作Windows XP的開機磁碟，必須使用不同的步驟。(原始步驟請參考RMPrepUSB官網 <a href="http://www.rmprepusb.com/tutorials/install-xp-from-an-iso" target="_blank" rel="noopener">Tutorial 30</a>)</p>
+<p>2. 將Windows XP的ISO檔案複製到前置作業的資料夾中(如：F:\BootUSB\WXP\XP.iso)</p>
+<p>3. 下載<a href="http://www.rmprepusb.com/documents/rmprepusb-beta-versions/winvblock.ima.gz?attredirects=0" target="_blank" rel="noopener">winvblock.ima.gz</a>檔案，並且放置在前置作業的資料夾中(如：F:\BootUSB\winvblock.ima.gz)</p>
+<p>4. 將下列語法加入Menu.lst當中：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">&gt; title Install Windows XP - STEP 1\nRemember press &amp;lt;F6&amp;gt; to load WinVBlock driver!!</span><br><span class="line">&gt; set MYISO=&lt;span style=&quot;background-color: yellow;&quot;&gt;XP.ISO&lt;/span&gt;</span><br><span class="line">&gt; find --set-root --ignore-floppies --ignore-cd /winvblock.ima.gz</span><br><span class="line">&gt; map --mem /winvblock.ima.gz (fd0)</span><br><span class="line">&gt; map --mem /winvblock.ima.gz &amp;nbsp;(fd1)</span><br><span class="line">&gt; # if this loads the ISO into memory slowly - then you need to run WinContig on the ISO file on your USB drive to speed it up!</span><br><span class="line">&gt; map &amp;nbsp;/WXP/%MYISO% (0xff) || map &amp;nbsp;--mem /WXP/%MYISO% (0xff)</span><br><span class="line">&gt; map (hd0) (hd1)</span><br><span class="line">&gt; map (hd1) (hd0)</span><br><span class="line">&gt; map --hook</span><br><span class="line">&gt; root (0xff)</span><br><span class="line">&gt; chainloader (0xff)&amp;nbsp;&gt; title &amp;nbsp;&amp;gt; Install Windows XP - STEP 2 (RAM &amp;gt; 1GB)\nContinue to install Windows XP with RAM &amp;gt; 1GB</span><br><span class="line">&gt; set MYISO=&lt;span style=&quot;background-color: yellow;&quot;&gt;XP.ISO&lt;/span&gt;</span><br><span class="line">&gt; find --set-root --ignore-floppies --ignore-cd /winvblock.ima.gz</span><br><span class="line">&gt; # we must load the ISO into memory, so it will be slow to load here ...</span><br><span class="line">&gt; echo Loading...</span><br><span class="line">&gt; map --mem /WXP/%MYISO% (0xff) || map &amp;nbsp;/WXP/%MYISO% (0xff)</span><br><span class="line">&gt; map (hd0) (hd1)</span><br><span class="line">&gt; map (hd1) (hd0)</span><br><span class="line">&gt; map --hook</span><br><span class="line">&gt; chainloader (hd0)+1</span><br><span class="line">&gt; pause Press ENTER and then unplug this USB drive...&amp;nbsp;&gt; title &amp;nbsp;&amp;gt; Install Windows XP - STEP 2 (RAM &amp;lt; 1GB)\nContinue to install Windows XP with RAM &amp;lt; 1GB</span><br><span class="line">&gt; set MYISO=&lt;span style=&quot;background-color: yellow;&quot;&gt;XP.ISO&lt;/span&gt;</span><br><span class="line">&gt; map --mem /winvblock.ima.gz (fd0)</span><br><span class="line">&gt; map --mem /winvblock.ima.gz &amp;nbsp;(fd1)</span><br><span class="line">&gt; map /WXP/%MYISO% (0xA0)</span><br><span class="line">&gt; checkrange 0x80 read 0x8280 &amp;amp;&amp;amp; map (hd0) (hd1)</span><br><span class="line">&gt; checkrange 0x80 read 0x8280 &amp;amp;&amp;amp; map (hd1) (hd0)</span><br><span class="line">&gt; map --hook</span><br><span class="line">&gt; map --rd-size=2048</span><br><span class="line">&gt; map --mem (rd)+4 (0x55)</span><br><span class="line">&gt; map --rehook</span><br><span class="line">&gt; write (0x55) #!GRUB4DOS\x00v=1\x00WXP/%MYISO%\x00\xA0\x00</span><br><span class="line">&gt; root (hd0,0)</span><br><span class="line">&gt; chainloader (hd0)+1</span><br><span class="line">&gt; pause Keep the USB drive connected until Setup completes!</span><br></pre></td></tr></table></figure>
+<p>5. 當使用USB安裝Windows XP時，先選擇第一個項目開機，於XP安裝程式初始畫面時按下鍵盤的F6，載入”FiraDisk Driver”以正確識別USB磁碟。當第一次重開機後，再選擇第二或第三個項目繼續Windows XP的安裝。</p>
+<p>B. 安裝Windows 8</p>
+<p>1. 安裝Windows 8可以使用如同安裝Windows 7的方式，但對於某些版本的Windows 8 ISO，必須輸入序號才能安裝(如Release Preview版本或Server 2012)，可利用修改自動應答檔案([FiraDisk\au.xml])來達成目的。</p>
+<p>2. 或是使用下列的語法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&gt; title Install Windows 8\nThis will install Windows 8 to your hard disk</span><br><span class="line">&gt; debug off</span><br><span class="line">&gt; set MYISO=WIN8.ISO</span><br><span class="line">&gt; dd if=()/firadisk/auWin8.xml of=()/AutoUnattend.xml</span><br><span class="line">&gt; dd if=()/firadisk/spaces.txt of=()/firadisk/ISONAME.CMD</span><br><span class="line">&gt; write ()/firadisk/ISONAME.CMD SET MYISO=\\iso\\%MYISO%\r\n</span><br><span class="line">&gt; map --mem (md)0x800+4 (99)</span><br><span class="line">&gt; map /ISO/%MYISO% (0xff)</span><br><span class="line">&gt; map (hd0) (hd1)</span><br><span class="line">&gt; map (hd1) (hd0)</span><br><span class="line">&gt; map --hook</span><br><span class="line">&gt; write (99) [FiraDisk]\nStartOptions=cdrom,vmem=find:/ISO/%MYISO%;\n\0</span><br><span class="line">&gt; chainloader (0xff)/BOOTMGR || chainloader (0xff)&lt;div&gt;</span><br><span class="line">&lt;/div&gt;&lt;div&gt;開啟[FiraDisk\auWin8.xml]，修改下列區段，將&amp;lt;Key&amp;gt;換成正確的安裝序號&lt;/div&gt;&lt;div&gt;&gt; &amp;lt;UserData&amp;gt;</span><br><span class="line">&gt; &amp;lt;AcceptEula&amp;gt;true&amp;lt;/AcceptEula&amp;gt;</span><br><span class="line">&gt; &amp;lt;ProductKey&amp;gt;</span><br><span class="line">&gt; &amp;lt;Key&amp;gt;&lt;span style=&quot;background-color: yellow;&quot;&gt;TK8TP-9JN6P-7X7WW-RFFTV-B7QPF&lt;/span&gt;&amp;lt;/Key&amp;gt;</span><br><span class="line">&gt; &amp;lt;/ProductKey&amp;gt;</span><br><span class="line">&gt; &amp;lt;/UserData&amp;gt;&lt;/div&gt;&lt;div&gt;</span><br><span class="line">&lt;/div&gt;C. 使用Windows PE</span><br></pre></td></tr></table></figure>
+<p>1. 若要使用以Windows Automated Installation Kit(WAIK)所建立的Windows PE環境開機，可以將建立出的檔案(如：BOOTMGR、[boot]、[sources]等)複製到前置作業資料夾，並於Menu.lst加入下列語法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt; title WinPE</span><br><span class="line">&gt; find --set-root /BOOTMGR</span><br><span class="line">&gt; chainloader /BOOTMGR</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/USB開機/" rel="tag"># USB開機</a>
+          
+            <a href="/tags/Windows/" rel="tag"># Windows</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2012/09/02/build-dcmtk/" rel="next" title="建置DCMTK">
+                <i class="fa fa-chevron-left"></i> 建置DCMTK
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">tbin987</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-name">tags</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          <div class="links-of-author motion-element">
+            
+          </div>
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">tbin987</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.3</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
