@@ -50,19 +50,19 @@
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.3">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.3">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.3">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
 
 
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
 
 
 
@@ -81,7 +81,7 @@
 
 
 
-<meta name="description" content="DCMTK 3.6.0發布囉：http://dicom.offis.de/dcmtk 上一次建置DCMTK時，還是3.5.3版加上VC2005，現在3.6.0版已經發布，且VC也已經發行到2012年版了。鑒於上一次建置已經有一段時間了，再加上當時僅建置DCMTK函式庫本身，並沒將外部函式庫一併建置，所以這次建置就順便來">
+<meta name="description" content="DCMTK 3.6.0發布囉：http://dicom.offis.de/dcmtk 上一次建置DCMTK時，還是3.5.3版加上VC2005，現在3.6.0版已經發布，且VC也已經發行到2012年版了。鑒於上一次建置已經有一段時間了，再加上當時僅建置DCMTK函式庫本身，並沒將外部函式庫一併建置，所以這次建置就順便來做個紀錄吧。">
 <meta name="keywords" content="DCMTK,DICOM">
 <meta property="og:type" content="article">
 <meta property="og:title" content="建置DCMTK">
@@ -120,7 +120,7 @@
   var CONFIG = {
     root: '/',
     scheme: 'Mist',
-    version: '5.1.3',
+    version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     tabs: true,
@@ -395,9 +395,9 @@
         <p>DCMTK 3.6.0發布囉：<br><a href="http://dicom.offis.de/dcmtk" target="_blank" rel="noopener">http://dicom.offis.de/dcmtk</a></p>
 <p>上一次建置DCMTK時，還是3.5.3版加上VC2005，現在3.6.0版已經發布，且VC也已經發行到2012年版了。鑒於上一次建置已經有一段時間了，再加上當時僅建置DCMTK函式庫本身，並沒將外部函式庫一併建置，所以這次建置就順便來做個紀錄吧。</p>
 <a id="more"></a>
-<p>1. 首先，當然就是要從DCMTK的官網下載函式庫的原始碼來囉，這次選擇的是3.6.0版本：<br>ftp://dicom.offis.de/pub/dicom/offis/software/dcmtk/dcmtk360/dcmtk-3.6.0.zip</p>
-<p>2. 因為還要加入外部函式庫，所以相關的檔案也要下載下來：<br>ZLIB:<br>ftp://dicom.offis.de/pub/dicom/offis/software/dcmtk/dcmtk360/support/zlib-1.2.5.tar.gz<br>LIBTIFF:<br>ftp://dicom.offis.de/pub/dicom/offis/software/dcmtk/dcmtk360/support/tiff-3.9.4.tar.gz<br>LIBPNG:<br>ftp://dicom.offis.de/pub/dicom/offis/software/dcmtk/dcmtk360/support/libpng-1.4.3.tar.gz<br>LIBXML2:<br>ftp://dicom.offis.de/pub/dicom/offis/software/dcmtk/dcmtk360/support/libxml2-2.7.7.tar.gz<br>LIBICONV:<br>ftp://dicom.offis.de/pub/dicom/offis/software/dcmtk/dcmtk360/support/libiconv-1.13.1.tar.gz<br>OpenSSL:<br>ftp://dicom.offis.de/pub/dicom/offis/software/dcmtk/dcmtk360/support/openssl-1.0.0c.tar.gz</p>
-<p>3. 因為上面這幾個函式庫還需要自己另外建置，但可能是我用的建置環境比較新，一直建置不成功，所以就直接下載官網上已經預先編譯好的函式庫來使用囉：<br>ftp://dicom.offis.de/pub/dicom/offis/software/dcmtk/dcmtk360/support/dcmtk-3.6.0-win32-i386-support_MT.zip<br>或<br>ftp://dicom.offis.de/pub/dicom/offis/software/dcmtk/dcmtk360/support/dcmtk-3.6.0-win32-i386-support_MD.zip</p>
+<p>1. 首先，當然就是要從DCMTK的官網下載函式庫的原始碼來囉，這次選擇的是3.6.0版本：<br><a href="ftp://dicom.offis.de/pub/dicom/offis/software/dcmtk/dcmtk360/dcmtk-3.6.0.zip" target="_blank" rel="noopener">ftp://dicom.offis.de/pub/dicom/offis/software/dcmtk/dcmtk360/dcmtk-3.6.0.zip</a></p>
+<p>2. 因為還要加入外部函式庫，所以相關的檔案也要下載下來：<br>ZLIB:<br><a href="ftp://dicom.offis.de/pub/dicom/offis/software/dcmtk/dcmtk360/support/zlib-1.2.5.tar.gz" target="_blank" rel="noopener">ftp://dicom.offis.de/pub/dicom/offis/software/dcmtk/dcmtk360/support/zlib-1.2.5.tar.gz</a><br>LIBTIFF:<br><a href="ftp://dicom.offis.de/pub/dicom/offis/software/dcmtk/dcmtk360/support/tiff-3.9.4.tar.gz" target="_blank" rel="noopener">ftp://dicom.offis.de/pub/dicom/offis/software/dcmtk/dcmtk360/support/tiff-3.9.4.tar.gz</a><br>LIBPNG:<br><a href="ftp://dicom.offis.de/pub/dicom/offis/software/dcmtk/dcmtk360/support/libpng-1.4.3.tar.gz" target="_blank" rel="noopener">ftp://dicom.offis.de/pub/dicom/offis/software/dcmtk/dcmtk360/support/libpng-1.4.3.tar.gz</a><br>LIBXML2:<br><a href="ftp://dicom.offis.de/pub/dicom/offis/software/dcmtk/dcmtk360/support/libxml2-2.7.7.tar.gz" target="_blank" rel="noopener">ftp://dicom.offis.de/pub/dicom/offis/software/dcmtk/dcmtk360/support/libxml2-2.7.7.tar.gz</a><br>LIBICONV:<br><a href="ftp://dicom.offis.de/pub/dicom/offis/software/dcmtk/dcmtk360/support/libiconv-1.13.1.tar.gz" target="_blank" rel="noopener">ftp://dicom.offis.de/pub/dicom/offis/software/dcmtk/dcmtk360/support/libiconv-1.13.1.tar.gz</a><br>OpenSSL:<br><a href="ftp://dicom.offis.de/pub/dicom/offis/software/dcmtk/dcmtk360/support/openssl-1.0.0c.tar.gz" target="_blank" rel="noopener">ftp://dicom.offis.de/pub/dicom/offis/software/dcmtk/dcmtk360/support/openssl-1.0.0c.tar.gz</a></p>
+<p>3. 因為上面這幾個函式庫還需要自己另外建置，但可能是我用的建置環境比較新，一直建置不成功，所以就直接下載官網上已經預先編譯好的函式庫來使用囉：<br><a href="ftp://dicom.offis.de/pub/dicom/offis/software/dcmtk/dcmtk360/support/dcmtk-3.6.0-win32-i386-support_MT.zip" target="_blank" rel="noopener">ftp://dicom.offis.de/pub/dicom/offis/software/dcmtk/dcmtk360/support/dcmtk-3.6.0-win32-i386-support_MT.zip</a><br>或<br><a href="ftp://dicom.offis.de/pub/dicom/offis/software/dcmtk/dcmtk360/support/dcmtk-3.6.0-win32-i386-support_MD.zip" target="_blank" rel="noopener">ftp://dicom.offis.de/pub/dicom/offis/software/dcmtk/dcmtk360/support/dcmtk-3.6.0-win32-i386-support_MD.zip</a></p>
 <p>這裡有兩種版本：多執行緒靜態連結(/MT)以及多執行緒動態連結(/MD)，視程式要使用函式庫的方法選擇適當的檔案囉。(DCMTK 3.6.0預設是建置為/MT)</p>
 <p>4. 因為在Windows下建置DCMTK需要使用到CMake，所以要到CMake官網下載來使用：<br><a href="http://www.cmake.org/files/v2.8/cmake-2.8.9-win32-x86.exe" target="_blank" rel="noopener">http://www.cmake.org/files/v2.8/cmake-2.8.9-win32-x86.exe</a> (安裝程式)<br>或<br><a href="http://www.cmake.org/files/v2.8/cmake-2.8.9-win32-x86.zip" target="_blank" rel="noopener">http://www.cmake.org/files/v2.8/cmake-2.8.9-win32-x86.zip</a> (免安裝)</p>
 <p>5. 接下來就要開始建置了，首先將DCMTK原始碼解壓縮到建置資料夾：<br>例如：E:\Project\Code\DCMTK\</p>
@@ -602,17 +602,17 @@
             </div>
           
 
-          <div class="links-of-author motion-element">
-            
-              
-                <span class="links-of-author-item">
-                  <a href="https://github.com/tbin987" target="_blank" title="GitHub">
-                    
-                      <i class="fa fa-fw fa-github"></i>GitHub</a>
-                </span>
-              
-            
-          </div>
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/tbin987" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+            </div>
+          
 
           
           
@@ -639,7 +639,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2017</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -657,7 +657,7 @@
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a></div>
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
 
 
 
@@ -748,25 +748,25 @@
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
-
-
-
-  
-  
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
 
 
 
   
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
 
 
 
