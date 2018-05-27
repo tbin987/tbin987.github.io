@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tbin987.github.io/"/>
-  <updated>2017-11-17T15:35:16.573Z</updated>
+  <updated>2018-05-27T14:24:42.182Z</updated>
   <id>https://tbin987.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Travel in UK</title>
+    <link href="https://tbin987.github.io/2018/05/27/travel-in-uk/"/>
+    <id>https://tbin987.github.io/2018/05/27/travel-in-uk/</id>
+    <published>2018-05-27T06:52:00.000Z</published>
+    <updated>2018-05-27T14:24:42.182Z</updated>
+    
+    <summary type="html">
+    
+      &lt;img src=&quot;https://farm5.staticflickr.com/4726/39100522621_da5083bcc4_z.jpg&quot; width=&quot;640&quot; alt=&quot;Stonehenge&quot; data-height=&quot;480&quot;&gt;
+&lt;p&gt;有緣來到英國出差，在休假時當然不能只宅在飯店裡，有機會就順便到英國各地走走啦！&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Travel" scheme="https://tbin987.github.io/categories/Travel/"/>
+    
+    
+      <category term="UK" scheme="https://tbin987.github.io/tags/UK/"/>
+    
+      <category term="Travel" scheme="https://tbin987.github.io/tags/Travel/"/>
+    
+  </entry>
   
   <entry>
     <title>建立用於安裝Windows的USB隨身碟</title>
@@ -101,9 +124,9 @@
       <category term="技術分享" scheme="https://tbin987.github.io/categories/TechShare/"/>
     
     
-      <category term="Windows Server 2012" scheme="https://tbin987.github.io/tags/Windows-Server-2012/"/>
-    
       <category term="SQL Server" scheme="https://tbin987.github.io/tags/SQL-Server/"/>
+    
+      <category term="Windows Server 2012" scheme="https://tbin987.github.io/tags/Windows-Server-2012/"/>
     
       <category term="SQL Server 2012" scheme="https://tbin987.github.io/tags/SQL-Server-2012/"/>
     

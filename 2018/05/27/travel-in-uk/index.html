@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="SQL Server,Windows Server 2012,SQL Server 2012," />
+  <meta name="keywords" content="UK,Travel," />
 
 
 
@@ -81,28 +81,43 @@
 
 
 
-<meta name="description" content="Server安裝完後，最重要的就是要安裝一些伺服器應用程式了，剛好，微軟這時同時也發布了好幾項產品，例如Visual Studio 2012 RC以及Team Foundation Server 2012 RC，所以剛裝好的Windows Server 2012 RC就可以拿來裝上TFS來玩玩囉。 在安裝TFS之前，首先要安裝的是SQL Server，雖然TFS預設會安裝上SQL Server E">
-<meta name="keywords" content="SQL Server,Windows Server 2012,SQL Server 2012">
+<meta name="description" content="有緣來到英國出差，在休假時當然不能只宅在飯店裡，有機會就順便到英國各地走走啦！">
+<meta name="keywords" content="UK,Travel">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Windows Server 2012 RC 嘗鮮 (2) 安裝SQL">
-<meta property="og:url" content="https://tbin987.github.io/2012/07/03/windows-server-2012-rc-taste-2-to-instal-sql/index.html">
+<meta property="og:title" content="Travel in UK">
+<meta property="og:url" content="https://tbin987.github.io/2018/05/27/travel-in-uk/index.html">
 <meta property="og:site_name" content="Tech &amp; Life">
-<meta property="og:description" content="Server安裝完後，最重要的就是要安裝一些伺服器應用程式了，剛好，微軟這時同時也發布了好幾項產品，例如Visual Studio 2012 RC以及Team Foundation Server 2012 RC，所以剛裝好的Windows Server 2012 RC就可以拿來裝上TFS來玩玩囉。 在安裝TFS之前，首先要安裝的是SQL Server，雖然TFS預設會安裝上SQL Server E">
+<meta property="og:description" content="有緣來到英國出差，在休假時當然不能只宅在飯店裡，有機會就順便到英國各地走走啦！">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http://2.bp.blogspot.com/-LCk4MEjpves/T_MAOlSuZuI/AAAAAAAACa4/OqknEDnaVlU/s320/20120701160820.png">
-<meta property="og:image" content="http://4.bp.blogspot.com/-zNkH8WQT0pA/T_MAOXXmPpI/AAAAAAAACaw/QZdzyxxe3Go/s320/20120701160851.png">
-<meta property="og:image" content="http://2.bp.blogspot.com/-2RD1g_XcZfg/T_MAOUXXR4I/AAAAAAAACa0/CLij9NLko-Y/s320/20120701160909.png">
-<meta property="og:image" content="http://3.bp.blogspot.com/--yRfGbLmE8c/T_MAP7dhzvI/AAAAAAAACbM/t9B3yfAk7DU/s320/20120701161143.png">
-<meta property="og:image" content="http://1.bp.blogspot.com/--aSOBpAEir4/T_MAQcC66nI/AAAAAAAACbQ/lhicSEC5X70/s320/20120701161152.png">
-<meta property="og:image" content="http://4.bp.blogspot.com/-OB3fRc32HLM/T_MAQ7dJzmI/AAAAAAAACbU/oZGvOa8GZGg/s320/20120701161158.png">
-<meta property="og:image" content="http://2.bp.blogspot.com/-BhwmPdKN7Qg/T_MAR86c0sI/AAAAAAAACbo/WrSr_hJ71Rw/s320/20120701164153.png">
-<meta property="og:image" content="http://4.bp.blogspot.com/-0JkE8r9ort8/T_MASjGvs-I/AAAAAAAACbs/mc6YwDejAPk/s320/20120701164220.png">
-<meta property="og:image" content="http://3.bp.blogspot.com/-H5LSeXPYrGg/T_MF1DgRrBI/AAAAAAAACgA/M6IRRWO2x2M/s320/20120703224624.png">
-<meta property="og:updated_time" content="2017-11-17T16:08:43.633Z">
+<meta property="og:image" content="https://farm5.staticflickr.com/4726/39100522621_da5083bcc4_z.jpg">
+<meta property="og:image" content="https://farm5.staticflickr.com/4587/38390127394_32528e8f36_m.jpg">
+<meta property="og:image" content="https://farm5.staticflickr.com/4657/25075349077_d3cebe1ab8_m.jpg">
+<meta property="og:image" content="https://farm5.staticflickr.com/4681/39100100201_d83e399c1a_m.jpg">
+<meta property="og:image" content="https://farm5.staticflickr.com/4682/27323025579_71240b1884_m.jpg">
+<meta property="og:image" content="https://farm5.staticflickr.com/4641/24239498777_1f50fefd3a_m.jpg">
+<meta property="og:image" content="https://farm5.staticflickr.com/4642/25234608368_eb0309afa9_m.jpg">
+<meta property="og:image" content="https://farm5.staticflickr.com/4608/39236536064_a869c15c93_m.jpg">
+<meta property="og:image" content="https://farm5.staticflickr.com/4770/39236550524_8f0595e5ba_m.jpg">
+<meta property="og:image" content="https://farm5.staticflickr.com/4681/27322841019_2b5e48f008_m.jpg">
+<meta property="og:image" content="https://farm5.staticflickr.com/4619/39048438045_e9d7baf43d_m.jpg">
+<meta property="og:image" content="https://farm5.staticflickr.com/4727/27323197219_20c46ded7b_m.jpg">
+<meta property="og:image" content="https://farm5.staticflickr.com/4640/38218482075_3d4bd608eb_m.jpg">
+<meta property="og:image" content="https://farm5.staticflickr.com/4687/39100410171_c83a5aed2a_m.jpg">
+<meta property="og:image" content="https://farm5.staticflickr.com/4633/39100520791_e1e19d8d85_m.jpg">
+<meta property="og:image" content="https://farm5.staticflickr.com/4634/25234337328_3e0cdee4aa_m.jpg">
+<meta property="og:image" content="https://farm5.staticflickr.com/4635/24239912187_d3ab302216_m.jpg">
+<meta property="og:image" content="https://farm5.staticflickr.com/4642/39100656471_bc99e4d198_m.jpg">
+<meta property="og:image" content="https://farm5.staticflickr.com/4758/39048688975_b4b9debc9a_m.jpg">
+<meta property="og:image" content="https://farm5.staticflickr.com/4678/28167001649_b7d5f0a0d7_m.jpg">
+<meta property="og:image" content="https://farm5.staticflickr.com/4630/39946600291_bc1b75cda7_m.jpg">
+<meta property="og:image" content="https://farm5.staticflickr.com/4656/26074186088_37fdb17683_m.jpg">
+<meta property="og:image" content="https://farm5.staticflickr.com/4670/39914679152_f5bd38b82f_m.jpg">
+<meta property="og:image" content="https://farm5.staticflickr.com/4662/25075306487_c5dbfd7e71_m.jpg">
+<meta property="og:updated_time" content="2018-05-27T14:24:42.182Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Windows Server 2012 RC 嘗鮮 (2) 安裝SQL">
-<meta name="twitter:description" content="Server安裝完後，最重要的就是要安裝一些伺服器應用程式了，剛好，微軟這時同時也發布了好幾項產品，例如Visual Studio 2012 RC以及Team Foundation Server 2012 RC，所以剛裝好的Windows Server 2012 RC就可以拿來裝上TFS來玩玩囉。 在安裝TFS之前，首先要安裝的是SQL Server，雖然TFS預設會安裝上SQL Server E">
-<meta name="twitter:image" content="http://2.bp.blogspot.com/-LCk4MEjpves/T_MAOlSuZuI/AAAAAAAACa4/OqknEDnaVlU/s320/20120701160820.png">
+<meta name="twitter:title" content="Travel in UK">
+<meta name="twitter:description" content="有緣來到英國出差，在休假時當然不能只宅在飯店裡，有機會就順便到英國各地走走啦！">
+<meta name="twitter:image" content="https://farm5.staticflickr.com/4726/39100522621_da5083bcc4_z.jpg">
 
 
 
@@ -132,13 +147,13 @@
 
 
 
-  <link rel="canonical" href="https://tbin987.github.io/2012/07/03/windows-server-2012-rc-taste-2-to-instal-sql/"/>
+  <link rel="canonical" href="https://tbin987.github.io/2018/05/27/travel-in-uk/"/>
 
 
 
 
 
-  <title>Windows Server 2012 RC 嘗鮮 (2) 安裝SQL | Tech & Life</title>
+  <title>Travel in UK | Tech & Life</title>
   
 
 
@@ -288,13 +303,15 @@
   
   
   
+    
+  
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal post-sticky" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://tbin987.github.io/2012/07/03/windows-server-2012-rc-taste-2-to-instal-sql/">
+    <link itemprop="mainEntityOfPage" href="https://tbin987.github.io/2018/05/27/travel-in-uk/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="tbin987">
@@ -311,7 +328,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Windows Server 2012 RC 嘗鮮 (2) 安裝SQL</h1>
+          <h1 class="post-title" itemprop="name headline">Travel in UK</h1>
         
 
         <div class="post-meta">
@@ -323,8 +340,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2012-07-03T22:57:00+08:00">
-                2012-07-03
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-27T14:52:00+08:00">
+                2018-05-27
               </time>
             
 
@@ -346,8 +363,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/TechShare/" itemprop="url" rel="index">
-                    <span itemprop="name">技術分享</span>
+                  <a href="/categories/Travel/" itemprop="url" rel="index">
+                    <span itemprop="name">Travel</span>
                   </a>
                 </span>
 
@@ -383,17 +400,79 @@
       
 
       
-        <p>Server安裝完後，最重要的就是要安裝一些伺服器應用程式了，剛好，微軟這時同時也發布了好幾項產品，例如Visual Studio 2012 RC以及Team Foundation Server 2012 RC，所以剛裝好的Windows Server 2012 RC就可以拿來裝上TFS來玩玩囉。</p>
-<p>在安裝TFS之前，首先要安裝的是SQL Server，雖然TFS預設會安裝上SQL Server Express，但預設並不會裝上管理工具，所以只好自己手動來安裝了。</p>
+        <img src="https://farm5.staticflickr.com/4726/39100522621_da5083bcc4_z.jpg" width="640" alt="Stonehenge" data-height="480">
+<p>有緣來到英國出差，在休假時當然不能只宅在飯店裡，有機會就順便到英國各地走走啦！</p>
 <a id="more"></a>
-<p>在Server 2012安裝SQL Server其實沒甚麼兩樣，基本上大部分[下一步] 按到底就可以了：</p>
-<p>選擇要安裝的元件，因為這裡裝的是SQL Server Express with Advanced Services，所以有管理工具以及報表服務可以選。 </p>
-<div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-LCk4MEjpves/T_MAOlSuZuI/AAAAAAAACa4/OqknEDnaVlU/s1600/20120701160820.png" target="_blank" rel="noopener"><img src="http://2.bp.blogspot.com/-LCk4MEjpves/T_MAOlSuZuI/AAAAAAAACa4/OqknEDnaVlU/s320/20120701160820.png" alt=""></a></div><br>設定執行個體名稱以及實體路徑。<br><br><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-zNkH8WQT0pA/T_MAOXXmPpI/AAAAAAAACaw/QZdzyxxe3Go/s1600/20120701160851.png" target="_blank" rel="noopener"><img src="http://4.bp.blogspot.com/-zNkH8WQT0pA/T_MAOXXmPpI/AAAAAAAACaw/QZdzyxxe3Go/s320/20120701160851.png" alt=""></a></div><br>設定服務帳號。<br><br><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-2RD1g_XcZfg/T_MAOUXXR4I/AAAAAAAACa0/CLij9NLko-Y/s1600/20120701160909.png" target="_blank" rel="noopener"><img src="http://2.bp.blogspot.com/-2RD1g_XcZfg/T_MAOUXXR4I/AAAAAAAACa0/CLij9NLko-Y/s320/20120701160909.png" alt=""></a></div><br>設定驗證模式，預設為Windows驗證模式，這裡改用混合式驗證。<br><br><a href="http://3.bp.blogspot.com/-Za_acvFXOMw/T_MAPlbQMDI/AAAAAAAACbI/Mqgmg2DfXzE/s1600/20120701160927.png" target="_blank" rel="noopener"></a><br><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/--yRfGbLmE8c/T_MAP7dhzvI/AAAAAAAACbM/t9B3yfAk7DU/s1600/20120701161143.png" target="_blank" rel="noopener"><img src="http://3.bp.blogspot.com/--yRfGbLmE8c/T_MAP7dhzvI/AAAAAAAACbM/t9B3yfAk7DU/s320/20120701161143.png" alt=""></a></div><br>設定報表服務，這裡先不做設定。<br><br><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/--aSOBpAEir4/T_MAQcC66nI/AAAAAAAACbQ/lhicSEC5X70/s1600/20120701161152.png" target="_blank" rel="noopener"><img src="http://1.bp.blogspot.com/--aSOBpAEir4/T_MAQcC66nI/AAAAAAAACbQ/lhicSEC5X70/s320/20120701161152.png" alt=""></a></div><br>錯誤報告功能，依個人喜好設定，按下[下一步]就開始安裝囉。<br><br><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-OB3fRc32HLM/T_MAQ7dJzmI/AAAAAAAACbU/oZGvOa8GZGg/s1600/20120701161158.png" target="_blank" rel="noopener"><img src="http://4.bp.blogspot.com/-OB3fRc32HLM/T_MAQ7dJzmI/AAAAAAAACbU/oZGvOa8GZGg/s320/20120701161158.png" alt=""></a></div><br>&nbsp;安裝完成。<br><br><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-BhwmPdKN7Qg/T_MAR86c0sI/AAAAAAAACbo/WrSr_hJ71Rw/s1600/20120701164153.png" target="_blank" rel="noopener"><img src="http://2.bp.blogspot.com/-BhwmPdKN7Qg/T_MAR86c0sI/AAAAAAAACbo/WrSr_hJ71Rw/s320/20120701164153.png" alt=""></a></div><br>不得不說，Server 2012把開始功能表改成Metro介面後，安裝完軟體開始畫面就變成這副德行：<br><br><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-0JkE8r9ort8/T_MASjGvs-I/AAAAAAAACbs/mc6YwDejAPk/s1600/20120701164220.png" target="_blank" rel="noopener"><img src="http://4.bp.blogspot.com/-0JkE8r9ort8/T_MASjGvs-I/AAAAAAAACbs/mc6YwDejAPk/s320/20120701164220.png" alt=""></a></div><br>若不想讓項目太多的話，對想要隱藏的項目按滑鼠右鍵，選取”從[開始]畫面取消釘選”就可以把該項目隱藏啦，之後可以對開始畫面按滑鼠右鍵，點選右下角的”所有應用程式”就可以叫出來囉。<br><br><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-H5LSeXPYrGg/T_MF1DgRrBI/AAAAAAAACgA/M6IRRWO2x2M/s1600/20120703224624.png" target="_blank" rel="noopener"><img src="http://3.bp.blogspot.com/-H5LSeXPYrGg/T_MF1DgRrBI/AAAAAAAACgA/M6IRRWO2x2M/s320/20120703224624.png" alt=""></a></div>
+<p>稍微整理一下曾經到過的<a href="#景點">景點</a>與<a href="#遊記">遊記</a>、<a href="#美食">美食</a>：</p>
+<hr>
+<h1 id="景點"><a href="#景點" class="headerlink" title="景點"></a><a name="attractions">景點</a></h1><h2 id="倫敦與周邊"><a href="#倫敦與周邊" class="headerlink" title="倫敦與周邊"></a>倫敦與周邊</h2><ul>
+<li>倫敦塔 (Tower of London)<img src="https://farm5.staticflickr.com/4587/38390127394_32528e8f36_m.jpg" width="240" alt="London Tower" data-height="180"></li>
+<li>倫敦塔橋 (Tower Bridge)<img src="https://farm5.staticflickr.com/4657/25075349077_d3cebe1ab8_m.jpg" width="240" alt="London Tower Bridge" data-height="180"></li>
+<li>格林威治天文台 (Greenwich Observatory)<img src="https://farm5.staticflickr.com/4681/39100100201_d83e399c1a_m.jpg" width="240" alt="Greenwich Observatory" data-height="180"></li>
+<li>格林威治大學 (Greenwich University)<img src="https://farm5.staticflickr.com/4682/27323025579_71240b1884_m.jpg" width="240" alt="Greenwich" data-height="180"></li>
+<li>卡蒂薩克號帆船 (Cutty Sark)<img src="https://farm5.staticflickr.com/4641/24239498777_1f50fefd3a_m.jpg" width="240" alt="Cutty Sark" data-height="180"></li>
+<li>大英博物館 (British Museum)<img src="https://farm5.staticflickr.com/4642/25234608368_eb0309afa9_m.jpg" width="240" alt="British Museum" data-height="180"></li>
+<li>白金漢宮 (Buckingham Palace)<img src="https://farm5.staticflickr.com/4608/39236536064_a869c15c93_m.jpg" width="240" alt="Buckingham Palace" data-height="180"></li>
+<li>西敏寺 (Westminster Abbey)<img src="https://farm5.staticflickr.com/4770/39236550524_8f0595e5ba_m.jpg" width="180" alt="Westminster Abbey" data-height="240"></li>
+<li>樂高倫敦旗艦店 (Lego)<img src="https://farm5.staticflickr.com/4681/27322841019_2b5e48f008_m.jpg" width="240" alt="Lego Store" data-height="180">
+</li>
+</ul>
+<h2 id="英格蘭地區"><a href="#英格蘭地區" class="headerlink" title="英格蘭地區"></a>英格蘭地區</h2><ul>
+<li>科爾切斯特 (Colchester)<img src="https://farm5.staticflickr.com/4619/39048438045_e9d7baf43d_m.jpg" width="240" alt="Colchester Castle" data-height="180"></li>
+<li>巴斯 (Bath Spa)<ul>
+<li>皇家新月樓 (Royal Crescent)<img src="https://farm5.staticflickr.com/4727/27323197219_20c46ded7b_m.jpg" width="240" alt="IMAG1630" data-height="69"></li>
+<li>普爾特尼橋 (Pulteney Bridge)<img src="https://farm5.staticflickr.com/4640/38218482075_3d4bd608eb_m.jpg" width="240" alt="Pulteney Bridge" data-height="180"></li>
+<li>巴斯浴場<img src="https://farm5.staticflickr.com/4687/39100410171_c83a5aed2a_m.jpg" width="240" alt="The Roman Baths" data-height="180"></li>
+</ul>
+</li>
+<li>巨石陣 (Stonehenge)<img src="https://farm5.staticflickr.com/4633/39100520791_e1e19d8d85_m.jpg" width="240" alt="Stonehenge" data-height="180"></li>
+<li>索爾茲伯里座堂 (Salisbury Cathedral)<img src="https://farm5.staticflickr.com/4634/25234337328_3e0cdee4aa_m.jpg" width="240" alt="Salisbury Cathedral" data-height="180"></li>
+<li>牛津 (Oxford)<img src="https://farm5.staticflickr.com/4635/24239912187_d3ab302216_m.jpg" width="240" alt="Oxford" data-height="180"></li>
+<li>亞芬河畔史特拉福 (Stratford Upon Avon)<img src="https://farm5.staticflickr.com/4642/39100656471_bc99e4d198_m.jpg" width="240" alt="Shakespeare&#39;s Birthplace" data-height="180"></li>
+<li>約克 (York)<ul>
+<li>肉鋪街 (The Shambles)<img src="https://farm5.staticflickr.com/4758/39048688975_b4b9debc9a_m.jpg" width="180" alt="Shambles St" data-height="240">
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="蘇格蘭"><a href="#蘇格蘭" class="headerlink" title="蘇格蘭"></a>蘇格蘭</h2><ul>
+<li>Caledonian Sleeper<img src="https://farm5.staticflickr.com/4678/28167001649_b7d5f0a0d7_m.jpg" width="240" alt="Caledonian Sleeper" data-height="180"></li>
+<li>愛丁堡 (Edingburg)<ul>
+<li>卡爾頓山(Calton Hill)<img src="https://farm5.staticflickr.com/4630/39946600291_bc1b75cda7_m.jpg" width="240" alt="Calton Hill" data-height="180"></li>
+<li>愛丁堡城堡 (Edinburgh Castle)<img src="https://farm5.staticflickr.com/4656/26074186088_37fdb17683_m.jpg" width="240" alt="Edinburgh Castle" data-height="180"></li>
+<li>Royal Mile<img src="https://farm5.staticflickr.com/4670/39914679152_f5bd38b82f_m.jpg" width="180" alt="Royal Mile" data-height="240"></li>
+<li>蘇格蘭博物館 (National Museums Scotland)<img src="https://farm5.staticflickr.com/4662/25075306487_c5dbfd7e71_m.jpg" width="180" alt="IScottish Museum" data-height="240">
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="遊記"><a href="#遊記" class="headerlink" title="遊記"></a><a name="travels">遊記</a></h1><ul>
+<li>漫步倫敦</li>
+<li><a href="/" title="倫敦塔與倫敦塔橋">倫敦塔與倫敦塔橋</a></li>
+<li>格林威治一日遊</li>
+<li>牛津漫步</li>
+<li>巴斯半日遊</li>
+<li>巨石陣</li>
+<li>銀白世界下的莎翁之家</li>
+<li>大英博物館</li>
+<li>臥舖列車初體驗</li>
+<li>愛丁堡之旅</li>
+<li>約克肉鋪街</li>
+</ul>
+<hr>
+<h1 id="美食"><a href="#美食" class="headerlink" title="美食"></a><a name="foods">美食</a></h1><ul>
+<li>Holiday Inn Colchester</li>
+<li>Nando’s 葡式烤雞</li>
+<li>Burger &amp; Lobster</li>
+<li>Mussel Inn (Edinburgh) 鮮甜淡菜</li>
+<li>Dr Chippys 炸魚薯條 (Colchester)</li>
+</ul>
+<!--
+測試
 
-<p>這部分微軟真的該再修改一下，不然每次安裝完軟體都要手動一個個隱藏，以往開始功能表的資料夾歸檔的設計就被浪費了。雖然這樣是符合平板/手機的使用模式，但我們現在用的還是一般電腦甚至伺服器吧，某些操作並不是在任何裝置都可以適用的。</p>
-<p>下一篇再來安裝Team Foundation Server 2012 RC吧。</p>
-<p><span id="goog_270759061"></span><span id="goog_270759062"></span></p>
-
+<p>This is <a href="/2012/09/02/build-dcmtk/" title="Title">an example</a> inline link.<br>–&gt;</p>
+-->
       
     </div>
     
@@ -413,7 +492,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link:</strong>
-    <a href="https://tbin987.github.io/2012/07/03/windows-server-2012-rc-taste-2-to-instal-sql/" title="Windows Server 2012 RC 嘗鮮 (2) 安裝SQL">https://tbin987.github.io/2012/07/03/windows-server-2012-rc-taste-2-to-instal-sql/</a>
+    <a href="https://tbin987.github.io/2018/05/27/travel-in-uk/" title="Travel in UK">https://tbin987.github.io/2018/05/27/travel-in-uk/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice: </strong>
@@ -428,11 +507,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/SQL-Server/" rel="tag"># SQL Server</a>
+            <a href="/tags/UK/" rel="tag"># UK</a>
           
-            <a href="/tags/Windows-Server-2012/" rel="tag"># Windows Server 2012</a>
-          
-            <a href="/tags/SQL-Server-2012/" rel="tag"># SQL Server 2012</a>
+            <a href="/tags/Travel/" rel="tag"># Travel</a>
           
         </div>
       
@@ -445,8 +522,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2012/06/03/windows-server-2012-rc-taste-1-instalation-articles/" rel="next" title="Windows Server 2012 RC 嘗鮮 (1) 安裝篇">
-                <i class="fa fa-chevron-left"></i> Windows Server 2012 RC 嘗鮮 (1) 安裝篇
+              <a href="/2012/11/04/create-a-usb-flash-drive-to-instal-windows/" rel="next" title="建立用於安裝Windows的USB隨身碟">
+                <i class="fa fa-chevron-left"></i> 建立用於安裝Windows的USB隨身碟
               </a>
             
           </div>
@@ -454,10 +531,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2012/07/07/tfs-2012-rc-in-server-2012-rc-eror-tf40534/" rel="prev" title="TFS 2012 RC in Server 2012 RC - Error TF400534">
-                TFS 2012 RC in Server 2012 RC - Error TF400534 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -509,8 +582,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -587,6 +669,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#景點"><span class="nav-text">景點</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#倫敦與周邊"><span class="nav-text">倫敦與周邊</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#英格蘭地區"><span class="nav-text">英格蘭地區</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#蘇格蘭"><span class="nav-text">蘇格蘭</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#遊記"><span class="nav-text">遊記</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#美食"><span class="nav-text">美食</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
