@@ -1,190 +1,127 @@
 <!DOCTYPE html>
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<html class="theme-next mist use-motion" lang="en">
-<head><meta name="generator" content="Hexo 3.8.0">
+<html lang="en">
+<head>
   <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.4.2">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.4.2">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.4.2">
+  <link rel="mask-icon" href="/images/logo.svg?v=7.4.2" color="#222">
+
+<link rel="stylesheet" href="/css/main.css?v=7.4.2">
 
 
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
-
-<link rel="stylesheet" href="/css/main.css?v=7.0.0">
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.0.0">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.0.0">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.0.0">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=7.0.0" color="#222">
-
-
-
-
-
-
-
-<script id="hexo.configurations">
+<script id="hexo-configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
     scheme: 'Mist',
-    version: '7.0.0',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    version: '7.4.2',
+    exturl: false,
+    sidebar: {"position":"right","display":"post","offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
     fancybox: false,
-    fastclick: false,
+    mediumzoom: false,
     lazyload: false,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    pangu: false,
     algolia: {
-      applicationID: '',
+      appID: '',
       apiKey: '',
       indexName: '',
       hits: {"per_page":10},
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: '',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: 'Copy',
+      copy_success: 'Copied',
+      copy_failure: 'Copy failed'
+    },
+    sidebarPadding: 40
   };
 </script>
 
-
-  
-
-
-
-
-  <meta name="description" content="等了好久，台鐵汐科站終於趕在2007年底前的12/30通車啦！ 汐科站屬於「臺鐵捷運化先期計畫」之一，是繼三坑、百福站之後，在北部地區第三個增設的捷運化車站。車站就位於台鐵汐止高架段起點的引道上，除了車站處於斜坡外，整個月台還呈現S形，而且站體還分成南北兩個獨立站體，算是個蠻有特色的車站。">
+  <meta name="description" content="等了好久，台鐵汐科站終於趕在2007年底前的12&#x2F;30通車啦！ 汐科站屬於「臺鐵捷運化先期計畫」之一，是繼三坑、百福站之後，在北部地區第三個增設的捷運化車站。車站就位於台鐵汐止高架段起點的引道上，除了車站處於斜坡外，整個月台還呈現S形，而且站體還分成南北兩個獨立站體，算是個蠻有特色的車站。">
 <meta name="keywords" content="鐵道">
 <meta property="og:type" content="article">
 <meta property="og:title" content="台鐵汐科站">
-<meta property="og:url" content="https://tbin987.github.io/2007/12/30/taiwan-railway-station/index.html">
+<meta property="og:url" content="https:&#x2F;&#x2F;tbin987.github.io&#x2F;2007&#x2F;12&#x2F;30&#x2F;taiwan-railway-station&#x2F;index.html">
 <meta property="og:site_name" content="Tech &amp; Life">
-<meta property="og:description" content="等了好久，台鐵汐科站終於趕在2007年底前的12/30通車啦！ 汐科站屬於「臺鐵捷運化先期計畫」之一，是繼三坑、百福站之後，在北部地區第三個增設的捷運化車站。車站就位於台鐵汐止高架段起點的引道上，除了車站處於斜坡外，整個月台還呈現S形，而且站體還分成南北兩個獨立站體，算是個蠻有特色的車站。">
+<meta property="og:description" content="等了好久，台鐵汐科站終於趕在2007年底前的12&#x2F;30通車啦！ 汐科站屬於「臺鐵捷運化先期計畫」之一，是繼三坑、百福站之後，在北部地區第三個增設的捷運化車站。車站就位於台鐵汐止高架段起點的引道上，除了車站處於斜坡外，整個月台還呈現S形，而且站體還分成南北兩個獨立站體，算是個蠻有特色的車站。">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http://bp2.blogger.com/_zf3Yi1MVc9c/R3e79HuxgsI/AAAAAAAAAEc/qhRvEocdKPU/s320/021.jpg">
-<meta property="og:image" content="http://bp0.blogger.com/_zf3Yi1MVc9c/R3e_TnuxgtI/AAAAAAAAAEk/iutxzdkbtWE/s320/005.jpg">
-<meta property="og:image" content="http://bp1.blogger.com/_zf3Yi1MVc9c/R3e_53uxguI/AAAAAAAAAEs/Zwm99MdMUdg/s320/001.jpg">
-<meta property="og:image" content="http://bp1.blogger.com/_zf3Yi1MVc9c/R3e_53uxgvI/AAAAAAAAAE0/oW-s7wEcrgU/s320/002.jpg">
-<meta property="og:image" content="http://bp2.blogger.com/_zf3Yi1MVc9c/R3e_6HuxgwI/AAAAAAAAAE8/v8_BTcQuDlk/s320/003.jpg">
-<meta property="og:image" content="http://bp2.blogger.com/_zf3Yi1MVc9c/R3e_6HuxgxI/AAAAAAAAAFE/ckIuu6Fj2AE/s320/004.jpg">
-<meta property="og:image" content="http://bp3.blogger.com/_zf3Yi1MVc9c/R3e_6XuxgyI/AAAAAAAAAFM/sRJo1pmjh9c/s320/006.jpg">
-<meta property="og:image" content="http://bp1.blogger.com/_zf3Yi1MVc9c/R3fAb3uxgzI/AAAAAAAAAFU/ppLsuy65neg/s320/007.jpg">
-<meta property="og:image" content="http://bp1.blogger.com/_zf3Yi1MVc9c/R3fAb3uxg0I/AAAAAAAAAFc/LUMuth_YhmA/s320/008.jpg">
-<meta property="og:image" content="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fAcHuxg1I/AAAAAAAAAFk/WZOS0YQ6ktA/s320/009.jpg">
-<meta property="og:image" content="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fAcHuxg2I/AAAAAAAAAFs/bOyzsX0Vxhw/s320/010.jpg">
-<meta property="og:image" content="http://bp3.blogger.com/_zf3Yi1MVc9c/R3fAcXuxg3I/AAAAAAAAAF0/_TgnwiWdaYU/s320/011.jpg">
-<meta property="og:image" content="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fIBHuxhRI/AAAAAAAAAJE/-udP2MmqMMU/s320/013.jpg">
-<meta property="og:image" content="http://bp0.blogger.com/_zf3Yi1MVc9c/R3fA0nuxg4I/AAAAAAAAAF8/3Nk_oOwaA0g/s320/012.jpg">
-<meta property="og:image" content="http://bp0.blogger.com/_zf3Yi1MVc9c/R3fA0nuxg5I/AAAAAAAAAGE/i88lcLy2EYc/s320/015.jpg">
-<meta property="og:image" content="http://bp1.blogger.com/_zf3Yi1MVc9c/R3fA03uxg6I/AAAAAAAAAGM/qtRIhnonznM/s320/016.jpg">
-<meta property="og:image" content="http://bp1.blogger.com/_zf3Yi1MVc9c/R3fA03uxg7I/AAAAAAAAAGU/M_R-iF3qo7s/s320/017.jpg">
-<meta property="og:image" content="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fA1Huxg8I/AAAAAAAAAGc/4uYph46WTCI/s320/018.jpg">
-<meta property="og:image" content="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fZVHuxhSI/AAAAAAAAAJM/cxL9wKFDz3w/s320/019.jpg">
-<meta property="og:image" content="http://bp3.blogger.com/_zf3Yi1MVc9c/R3fZVXuxhTI/AAAAAAAAAJU/SZHY31eOQkA/s320/020.jpg">
-<meta property="og:image" content="http://bp2.blogger.com/_zf3Yi1MVc9c/R3faYHuxhUI/AAAAAAAAAJc/hukaVjLwSqM/s320/022.jpg">
-<meta property="og:image" content="http://bp3.blogger.com/_zf3Yi1MVc9c/R3fcQXuxhXI/AAAAAAAAAJ0/2SmUIfXCB_s/s320/023.jpg">
-<meta property="og:image" content="http://bp2.blogger.com/_zf3Yi1MVc9c/R3faYHuxhVI/AAAAAAAAAJk/anQofCirMXs/s320/024.jpg">
-<meta property="og:image" content="http://bp1.blogger.com/_zf3Yi1MVc9c/R3fCM3uxhMI/AAAAAAAAAIc/Qyam9L5Hpqc/s320/026.jpg">
-<meta property="og:image" content="http://bp3.blogger.com/_zf3Yi1MVc9c/R3faYXuxhWI/AAAAAAAAAJs/oSyS3QCLoxk/s320/025.jpg">
-<meta property="og:image" content="http://bp3.blogger.com/_zf3Yi1MVc9c/R3fCNXuxhNI/AAAAAAAAAIk/zwTFHGt_3z4/s320/027.jpg">
-<meta property="og:image" content="http://bp3.blogger.com/_zf3Yi1MVc9c/R3fCNXuxhOI/AAAAAAAAAIs/JSzTWSquPpA/s320/028.jpg">
-<meta property="og:image" content="http://bp0.blogger.com/_zf3Yi1MVc9c/R3fCNnuxhPI/AAAAAAAAAI0/xDpTxW4t-Ig/s320/029.jpg">
-<meta property="og:image" content="http://bp0.blogger.com/_zf3Yi1MVc9c/R3fCNnuxhQI/AAAAAAAAAI8/pwI29MPIk3M/s320/030.jpg">
-<meta property="og:image" content="http://bp0.blogger.com/_zf3Yi1MVc9c/R3fB1nuxhHI/AAAAAAAAAH0/dRG1B5UE2Qs/s320/031.jpg">
-<meta property="og:image" content="http://bp0.blogger.com/_zf3Yi1MVc9c/R3fB1nuxhII/AAAAAAAAAH8/GQ5W5WIZShg/s320/032.jpg">
-<meta property="og:image" content="http://bp1.blogger.com/_zf3Yi1MVc9c/R3fB13uxhJI/AAAAAAAAAIE/yYdgbRivNFI/s320/034.jpg">
-<meta property="og:image" content="http://bp1.blogger.com/_zf3Yi1MVc9c/R3fB13uxhKI/AAAAAAAAAIM/2UUjxQU_03g/s320/036.jpg">
-<meta property="og:image" content="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fB2HuxhLI/AAAAAAAAAIU/pYki8PD5AnY/s320/037.jpg">
-<meta property="og:image" content="http://bp1.blogger.com/_zf3Yi1MVc9c/R3fBe3uxhCI/AAAAAAAAAHM/pF2v8XJG3xY/s320/038.jpg">
-<meta property="og:image" content="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fBfHuxhDI/AAAAAAAAAHU/208S4MioAdg/s320/039.jpg">
-<meta property="og:image" content="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fBfHuxhEI/AAAAAAAAAHc/cNbvFYN-afM/s320/040.jpg">
-<meta property="og:image" content="http://bp3.blogger.com/_zf3Yi1MVc9c/R3fBfXuxhFI/AAAAAAAAAHk/km9UeBEW48U/s320/041.jpg">
-<meta property="og:image" content="http://bp0.blogger.com/_zf3Yi1MVc9c/R3fBKnuxhAI/AAAAAAAAAG8/c_sdtNE9Tbw/s320/044.jpg">
-<meta property="og:image" content="http://bp1.blogger.com/_zf3Yi1MVc9c/R3fBK3uxhBI/AAAAAAAAAHE/j26agFGdVR4/s320/043.jpg">
-<meta property="og:image" content="http://bp0.blogger.com/_zf3Yi1MVc9c/R3fBfnuxhGI/AAAAAAAAAHs/DBuv-bAJiII/s320/042.jpg">
-<meta property="og:image" content="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fBKHuxg9I/AAAAAAAAAGk/-FFGRfupGKk/s320/052.jpg">
-<meta property="og:image" content="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fBKHuxg-I/AAAAAAAAAGs/8vGIUGPIYZI/s320/050.jpg">
-<meta property="og:image" content="http://bp3.blogger.com/_zf3Yi1MVc9c/R3fBKXuxg_I/AAAAAAAAAG0/Ke2bPBPpRtg/s320/048.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;bp2.blogger.com&#x2F;_zf3Yi1MVc9c&#x2F;R3e79HuxgsI&#x2F;AAAAAAAAAEc&#x2F;qhRvEocdKPU&#x2F;s320&#x2F;021.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;bp0.blogger.com&#x2F;_zf3Yi1MVc9c&#x2F;R3e_TnuxgtI&#x2F;AAAAAAAAAEk&#x2F;iutxzdkbtWE&#x2F;s320&#x2F;005.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;bp1.blogger.com&#x2F;_zf3Yi1MVc9c&#x2F;R3e_53uxguI&#x2F;AAAAAAAAAEs&#x2F;Zwm99MdMUdg&#x2F;s320&#x2F;001.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;bp1.blogger.com&#x2F;_zf3Yi1MVc9c&#x2F;R3e_53uxgvI&#x2F;AAAAAAAAAE0&#x2F;oW-s7wEcrgU&#x2F;s320&#x2F;002.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;bp2.blogger.com&#x2F;_zf3Yi1MVc9c&#x2F;R3e_6HuxgwI&#x2F;AAAAAAAAAE8&#x2F;v8_BTcQuDlk&#x2F;s320&#x2F;003.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;bp2.blogger.com&#x2F;_zf3Yi1MVc9c&#x2F;R3e_6HuxgxI&#x2F;AAAAAAAAAFE&#x2F;ckIuu6Fj2AE&#x2F;s320&#x2F;004.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;bp3.blogger.com&#x2F;_zf3Yi1MVc9c&#x2F;R3e_6XuxgyI&#x2F;AAAAAAAAAFM&#x2F;sRJo1pmjh9c&#x2F;s320&#x2F;006.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;bp1.blogger.com&#x2F;_zf3Yi1MVc9c&#x2F;R3fAb3uxgzI&#x2F;AAAAAAAAAFU&#x2F;ppLsuy65neg&#x2F;s320&#x2F;007.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;bp1.blogger.com&#x2F;_zf3Yi1MVc9c&#x2F;R3fAb3uxg0I&#x2F;AAAAAAAAAFc&#x2F;LUMuth_YhmA&#x2F;s320&#x2F;008.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;bp2.blogger.com&#x2F;_zf3Yi1MVc9c&#x2F;R3fAcHuxg1I&#x2F;AAAAAAAAAFk&#x2F;WZOS0YQ6ktA&#x2F;s320&#x2F;009.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;bp2.blogger.com&#x2F;_zf3Yi1MVc9c&#x2F;R3fAcHuxg2I&#x2F;AAAAAAAAAFs&#x2F;bOyzsX0Vxhw&#x2F;s320&#x2F;010.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;bp3.blogger.com&#x2F;_zf3Yi1MVc9c&#x2F;R3fAcXuxg3I&#x2F;AAAAAAAAAF0&#x2F;_TgnwiWdaYU&#x2F;s320&#x2F;011.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;bp2.blogger.com&#x2F;_zf3Yi1MVc9c&#x2F;R3fIBHuxhRI&#x2F;AAAAAAAAAJE&#x2F;-udP2MmqMMU&#x2F;s320&#x2F;013.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;bp0.blogger.com&#x2F;_zf3Yi1MVc9c&#x2F;R3fA0nuxg4I&#x2F;AAAAAAAAAF8&#x2F;3Nk_oOwaA0g&#x2F;s320&#x2F;012.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;bp0.blogger.com&#x2F;_zf3Yi1MVc9c&#x2F;R3fA0nuxg5I&#x2F;AAAAAAAAAGE&#x2F;i88lcLy2EYc&#x2F;s320&#x2F;015.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;bp1.blogger.com&#x2F;_zf3Yi1MVc9c&#x2F;R3fA03uxg6I&#x2F;AAAAAAAAAGM&#x2F;qtRIhnonznM&#x2F;s320&#x2F;016.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;bp1.blogger.com&#x2F;_zf3Yi1MVc9c&#x2F;R3fA03uxg7I&#x2F;AAAAAAAAAGU&#x2F;M_R-iF3qo7s&#x2F;s320&#x2F;017.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;bp2.blogger.com&#x2F;_zf3Yi1MVc9c&#x2F;R3fA1Huxg8I&#x2F;AAAAAAAAAGc&#x2F;4uYph46WTCI&#x2F;s320&#x2F;018.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;bp2.blogger.com&#x2F;_zf3Yi1MVc9c&#x2F;R3fZVHuxhSI&#x2F;AAAAAAAAAJM&#x2F;cxL9wKFDz3w&#x2F;s320&#x2F;019.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;bp3.blogger.com&#x2F;_zf3Yi1MVc9c&#x2F;R3fZVXuxhTI&#x2F;AAAAAAAAAJU&#x2F;SZHY31eOQkA&#x2F;s320&#x2F;020.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;bp2.blogger.com&#x2F;_zf3Yi1MVc9c&#x2F;R3faYHuxhUI&#x2F;AAAAAAAAAJc&#x2F;hukaVjLwSqM&#x2F;s320&#x2F;022.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;bp3.blogger.com&#x2F;_zf3Yi1MVc9c&#x2F;R3fcQXuxhXI&#x2F;AAAAAAAAAJ0&#x2F;2SmUIfXCB_s&#x2F;s320&#x2F;023.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;bp2.blogger.com&#x2F;_zf3Yi1MVc9c&#x2F;R3faYHuxhVI&#x2F;AAAAAAAAAJk&#x2F;anQofCirMXs&#x2F;s320&#x2F;024.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;bp1.blogger.com&#x2F;_zf3Yi1MVc9c&#x2F;R3fCM3uxhMI&#x2F;AAAAAAAAAIc&#x2F;Qyam9L5Hpqc&#x2F;s320&#x2F;026.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;bp3.blogger.com&#x2F;_zf3Yi1MVc9c&#x2F;R3faYXuxhWI&#x2F;AAAAAAAAAJs&#x2F;oSyS3QCLoxk&#x2F;s320&#x2F;025.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;bp3.blogger.com&#x2F;_zf3Yi1MVc9c&#x2F;R3fCNXuxhNI&#x2F;AAAAAAAAAIk&#x2F;zwTFHGt_3z4&#x2F;s320&#x2F;027.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;bp3.blogger.com&#x2F;_zf3Yi1MVc9c&#x2F;R3fCNXuxhOI&#x2F;AAAAAAAAAIs&#x2F;JSzTWSquPpA&#x2F;s320&#x2F;028.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;bp0.blogger.com&#x2F;_zf3Yi1MVc9c&#x2F;R3fCNnuxhPI&#x2F;AAAAAAAAAI0&#x2F;xDpTxW4t-Ig&#x2F;s320&#x2F;029.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;bp0.blogger.com&#x2F;_zf3Yi1MVc9c&#x2F;R3fCNnuxhQI&#x2F;AAAAAAAAAI8&#x2F;pwI29MPIk3M&#x2F;s320&#x2F;030.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;bp0.blogger.com&#x2F;_zf3Yi1MVc9c&#x2F;R3fB1nuxhHI&#x2F;AAAAAAAAAH0&#x2F;dRG1B5UE2Qs&#x2F;s320&#x2F;031.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;bp0.blogger.com&#x2F;_zf3Yi1MVc9c&#x2F;R3fB1nuxhII&#x2F;AAAAAAAAAH8&#x2F;GQ5W5WIZShg&#x2F;s320&#x2F;032.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;bp1.blogger.com&#x2F;_zf3Yi1MVc9c&#x2F;R3fB13uxhJI&#x2F;AAAAAAAAAIE&#x2F;yYdgbRivNFI&#x2F;s320&#x2F;034.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;bp1.blogger.com&#x2F;_zf3Yi1MVc9c&#x2F;R3fB13uxhKI&#x2F;AAAAAAAAAIM&#x2F;2UUjxQU_03g&#x2F;s320&#x2F;036.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;bp2.blogger.com&#x2F;_zf3Yi1MVc9c&#x2F;R3fB2HuxhLI&#x2F;AAAAAAAAAIU&#x2F;pYki8PD5AnY&#x2F;s320&#x2F;037.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;bp1.blogger.com&#x2F;_zf3Yi1MVc9c&#x2F;R3fBe3uxhCI&#x2F;AAAAAAAAAHM&#x2F;pF2v8XJG3xY&#x2F;s320&#x2F;038.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;bp2.blogger.com&#x2F;_zf3Yi1MVc9c&#x2F;R3fBfHuxhDI&#x2F;AAAAAAAAAHU&#x2F;208S4MioAdg&#x2F;s320&#x2F;039.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;bp2.blogger.com&#x2F;_zf3Yi1MVc9c&#x2F;R3fBfHuxhEI&#x2F;AAAAAAAAAHc&#x2F;cNbvFYN-afM&#x2F;s320&#x2F;040.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;bp3.blogger.com&#x2F;_zf3Yi1MVc9c&#x2F;R3fBfXuxhFI&#x2F;AAAAAAAAAHk&#x2F;km9UeBEW48U&#x2F;s320&#x2F;041.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;bp0.blogger.com&#x2F;_zf3Yi1MVc9c&#x2F;R3fBKnuxhAI&#x2F;AAAAAAAAAG8&#x2F;c_sdtNE9Tbw&#x2F;s320&#x2F;044.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;bp1.blogger.com&#x2F;_zf3Yi1MVc9c&#x2F;R3fBK3uxhBI&#x2F;AAAAAAAAAHE&#x2F;j26agFGdVR4&#x2F;s320&#x2F;043.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;bp0.blogger.com&#x2F;_zf3Yi1MVc9c&#x2F;R3fBfnuxhGI&#x2F;AAAAAAAAAHs&#x2F;DBuv-bAJiII&#x2F;s320&#x2F;042.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;bp2.blogger.com&#x2F;_zf3Yi1MVc9c&#x2F;R3fBKHuxg9I&#x2F;AAAAAAAAAGk&#x2F;-FFGRfupGKk&#x2F;s320&#x2F;052.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;bp2.blogger.com&#x2F;_zf3Yi1MVc9c&#x2F;R3fBKHuxg-I&#x2F;AAAAAAAAAGs&#x2F;8vGIUGPIYZI&#x2F;s320&#x2F;050.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;bp3.blogger.com&#x2F;_zf3Yi1MVc9c&#x2F;R3fBKXuxg_I&#x2F;AAAAAAAAAG0&#x2F;Ke2bPBPpRtg&#x2F;s320&#x2F;048.jpg">
 <meta property="og:updated_time" content="2017-11-17T09:37:51.357Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="台鐵汐科站">
-<meta name="twitter:description" content="等了好久，台鐵汐科站終於趕在2007年底前的12/30通車啦！ 汐科站屬於「臺鐵捷運化先期計畫」之一，是繼三坑、百福站之後，在北部地區第三個增設的捷運化車站。車站就位於台鐵汐止高架段起點的引道上，除了車站處於斜坡外，整個月台還呈現S形，而且站體還分成南北兩個獨立站體，算是個蠻有特色的車站。">
-<meta name="twitter:image" content="http://bp2.blogger.com/_zf3Yi1MVc9c/R3e79HuxgsI/AAAAAAAAAEc/qhRvEocdKPU/s320/021.jpg">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;bp2.blogger.com&#x2F;_zf3Yi1MVc9c&#x2F;R3e79HuxgsI&#x2F;AAAAAAAAAEc&#x2F;qhRvEocdKPU&#x2F;s320&#x2F;021.jpg">
+
+<link rel="canonical" href="https://tbin987.github.io/2007/12/30/taiwan-railway-station/">
 
 
-
-  <link rel="alternate" href="/atom.xml" title="Tech & Life" type="application/atom+xml">
-
-
-
-
-  <link rel="canonical" href="https://tbin987.github.io/2007/12/30/taiwan-railway-station/">
-
-
-
-<script id="page.configurations">
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
   };
 </script>
 
   <title>台鐵汐科站 | Tech & Life</title>
   
-
-
-
-
-  <script async src="//www.googletagmanager.com/gtag/js?id=UA-109842982-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-109842982-1');
-  </script>
-
 
 
 
@@ -195,7 +132,6 @@
 
   <noscript>
   <style>
-  .use-motion .motion-element,
   .use-motion .brand,
   .use-motion .menu-item,
   .sidebar-inner,
@@ -204,9 +140,8 @@
   .use-motion .comments,
   .use-motion .post-header,
   .use-motion .post-body,
-  .use-motion .collection-title { opacity: initial; }
+  .use-motion .collection-header { opacity: initial; }
 
-  .use-motion .logo,
   .use-motion .site-title,
   .use-motion .site-subtitle {
     opacity: initial;
@@ -220,300 +155,140 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="en">
-
-  
-  
-    
-  
-
-  <div class="container sidebar-position-left page-post-detail">
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
   <div class="site-meta">
-    
 
-    <div class="custom-logo-site-title">
+    <div>
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">Tech & Life</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-    
-    
   </div>
 
   <div class="site-nav-toggle">
-    <button aria-label="Toggle navigation bar">
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
   </div>
 </div>
-
 
 
 <nav class="site-nav">
   
-    <ul id="menu" class="menu">
-      
-        
-        
-        
-          
-          <li class="menu-item menu-item-home">
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
 
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
 
   </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-about">
+        <li class="menu-item menu-item-about">
 
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>About</a>
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>About</a>
 
   </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-tags">
+        <li class="menu-item menu-item-tags">
 
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Tags</a>
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags</a>
 
   </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-categories">
+        <li class="menu-item menu-item-categories">
 
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>Categories</a>
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories</a>
 
   </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-archives">
+        <li class="menu-item menu-item-archives">
 
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
 
   </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-sitemap">
+        <li class="menu-item menu-item-sitemap">
 
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/sitemap.xml" rel="section"><i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>Sitemap</a>
+    <a href="/sitemap.xml" rel="section"><i class="fa fa-fw fa-sitemap"></i>Sitemap</a>
 
   </li>
+  </ul>
 
-      
-      
-    </ul>
-  
-
-  
-    
-
-  
-
-  
 </nav>
-
-
-
-  
-
-
-
 </div>
     </header>
 
     
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
 
 
-    <main id="main" class="main">
+    <main class="main">
       <div class="main-inner">
         <div class="content-wrap">
           
-          <div id="content" class="content">
+
+          <div class="content">
             
 
-  <div id="posts" class="posts-expand">
-    
-
-  
-
+  <div class="posts-expand">
+      
   
   
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
     <link itemprop="mainEntityOfPage" href="https://tbin987.github.io/2007/12/30/taiwan-railway-station/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="tbin987">
-      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="tbin987">
+      <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Tech & Life">
     </span>
-
-    
       <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">台鐵汐科站
-
-              
-            
-          </h1>
-        
+        <h1 class="post-title" itemprop="name headline">
+          台鐵汐科站
+        </h1>
 
         <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
+              <span class="post-meta-item-text">Posted on</span>
 
               <time title="Created: 2007-12-30 23:38:00" itemprop="dateCreated datePublished" datetime="2007-12-30T23:38:00+08:00">2007-12-30</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
+            </span>
+              <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
+                <span class="post-meta-item-text">Edited on</span>
                 <time title="Modified: 2017-11-17 17:37:51" itemprop="dateModified" datetime="2017-11-17T17:37:51+08:00">2017-11-17</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
+              </span>
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Life/" itemprop="url" rel="index"><span itemprop="name">Life</span></a></span>
-
-                
-                
-              
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Life/" itemprop="url" rel="index">
+                    <span itemprop="name">Life</span>
+                  </a>
+                </span>
             </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
 
           
 
         </div>
       </header>
-    
 
     
     
@@ -521,273 +296,149 @@
     <div class="post-body" itemprop="articleBody">
 
       
-      
-
-      
         <p>等了好久，台鐵汐科站終於趕在2007年底前的12/30通車啦！</p>
-<p><a href="http://bp2.blogger.com/_zf3Yi1MVc9c/R3e79HuxgsI/AAAAAAAAAEc/qhRvEocdKPU/s1600-h/021.jpg" target="_blank" rel="noopener"><img src="http://bp2.blogger.com/_zf3Yi1MVc9c/R3e79HuxgsI/AAAAAAAAAEc/qhRvEocdKPU/s320/021.jpg" alt></a><br>汐科站屬於「臺鐵捷運化先期計畫」之一，是繼三坑、百福站之後，在北部地區第三個增設的捷運化車站。車站就位於台鐵汐止高架段起點的引道上，除了車站處於斜坡外，整個月台還呈現S形，而且站體還分成南北兩個獨立站體，算是個蠻有特色的車站。</p>
+<p><a href="http://bp2.blogger.com/_zf3Yi1MVc9c/R3e79HuxgsI/AAAAAAAAAEc/qhRvEocdKPU/s1600-h/021.jpg" target="_blank" rel="noopener"><img src="http://bp2.blogger.com/_zf3Yi1MVc9c/R3e79HuxgsI/AAAAAAAAAEc/qhRvEocdKPU/s320/021.jpg" alt=""></a><br>汐科站屬於「臺鐵捷運化先期計畫」之一，是繼三坑、百福站之後，在北部地區第三個增設的捷運化車站。車站就位於台鐵汐止高架段起點的引道上，除了車站處於斜坡外，整個月台還呈現S形，而且站體還分成南北兩個獨立站體，算是個蠻有特色的車站。</p>
 <a id="more"></a>
-<div style="text-align: center;"><a href="http://bp0.blogger.com/_zf3Yi1MVc9c/R3e_TnuxgtI/AAAAAAAAAEk/iutxzdkbtWE/s1600-h/005.jpg" target="_blank" rel="noopener"><img src="http://bp0.blogger.com/_zf3Yi1MVc9c/R3e_TnuxgtI/AAAAAAAAAEk/iutxzdkbtWE/s320/005.jpg" alt></a>車站位置圖。<br>不過仔細看，可以發現地圖的向北標示其實是指向南方的。</div>
+<div style="text-align: center;"><a href="http://bp0.blogger.com/_zf3Yi1MVc9c/R3e_TnuxgtI/AAAAAAAAAEk/iutxzdkbtWE/s1600-h/005.jpg" target="_blank" rel="noopener"><img src="http://bp0.blogger.com/_zf3Yi1MVc9c/R3e_TnuxgtI/AAAAAAAAAEk/iutxzdkbtWE/s320/005.jpg" alt=""></a>車站位置圖。<br>不過仔細看，可以發現地圖的向北標示其實是指向南方的。</div>
 
 <p>下面就是今天趁機從汐科搭火車到台北所拍的照片：</p>
-<div style="text-align: center;"><a href="http://bp1.blogger.com/_zf3Yi1MVc9c/R3e_53uxguI/AAAAAAAAAEs/Zwm99MdMUdg/s1600-h/001.jpg" target="_blank" rel="noopener"><img src="http://bp1.blogger.com/_zf3Yi1MVc9c/R3e_53uxguI/AAAAAAAAAEs/Zwm99MdMUdg/s320/001.jpg" alt></a>這是南站體，位於鐵路的平面段，所以要在這裡搭車必須先上到二樓再往下走到月台。</div><br><div style="text-align: center;"><a href="http://bp1.blogger.com/_zf3Yi1MVc9c/R3e_53uxgvI/AAAAAAAAAE0/oW-s7wEcrgU/s1600-h/002.jpg" target="_blank" rel="noopener"><img src="http://bp1.blogger.com/_zf3Yi1MVc9c/R3e_53uxgvI/AAAAAAAAAE0/oW-s7wEcrgU/s320/002.jpg" alt></a></div><br><div style="text-align: center;"><a href="http://bp2.blogger.com/_zf3Yi1MVc9c/R3e_6HuxgwI/AAAAAAAAAE8/v8_BTcQuDlk/s1600-h/003.jpg" target="_blank" rel="noopener"><img src="http://bp2.blogger.com/_zf3Yi1MVc9c/R3e_6HuxgwI/AAAAAAAAAE8/v8_BTcQuDlk/s320/003.jpg" alt></a>南站體的入口，不過英文譯名…”Sike” station<br><br></div><div style="text-align: center;"><a href="http://bp2.blogger.com/_zf3Yi1MVc9c/R3e_6HuxgxI/AAAAAAAAAFE/ckIuu6Fj2AE/s1600-h/004.jpg" target="_blank" rel="noopener"><img src="http://bp2.blogger.com/_zf3Yi1MVc9c/R3e_6HuxgxI/AAAAAAAAAFE/ckIuu6Fj2AE/s320/004.jpg" alt></a>南站體的大廳購票處，只有兩台自動購票機。</div><br><div style="text-align: center;"><a href="http://bp3.blogger.com/_zf3Yi1MVc9c/R3e_6XuxgyI/AAAAAAAAAFM/sRJo1pmjh9c/s1600-h/006.jpg" target="_blank" rel="noopener"><img src="http://bp3.blogger.com/_zf3Yi1MVc9c/R3e_6XuxgyI/AAAAAAAAAFM/sRJo1pmjh9c/s320/006.jpg" alt></a>剪票口<br>南站今天有兩位服務人員，不過不知道是假日還是第一天啟用的關係，南站看起來很冷清。</div><br><div style="text-align: center;"><a href="http://bp1.blogger.com/_zf3Yi1MVc9c/R3fAb3uxgzI/AAAAAAAAAFU/ppLsuy65neg/s1600-h/007.jpg" target="_blank" rel="noopener"><img src="http://bp1.blogger.com/_zf3Yi1MVc9c/R3fAb3uxgzI/AAAAAAAAAFU/ppLsuy65neg/s320/007.jpg" alt></a>從南站往高雄的方向看<br>左手邊的建築就是站名的由來，不過它其實叫做遠東科技園區，宏碁acer的總公司就位在這個園區裡。遠方的橋樑則是北二高。</div><br><div style="text-align: center;"><a href="http://bp1.blogger.com/_zf3Yi1MVc9c/R3fAb3uxg0I/AAAAAAAAAFc/LUMuth_YhmA/s1600-h/008.jpg" target="_blank" rel="noopener"><img src="http://bp1.blogger.com/_zf3Yi1MVc9c/R3fAb3uxg0I/AAAAAAAAAFc/LUMuth_YhmA/s320/008.jpg" alt></a>南站往月台方向看<br>左右兩邊就是通往月台的走道，不過不清楚為何要這樣設計，因為這樣一來得走好遠才能到月台。</div><br><div style="text-align: center;"><a href="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fAcHuxg1I/AAAAAAAAAFk/WZOS0YQ6ktA/s1600-h/009.jpg" target="_blank" rel="noopener"><img src="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fAcHuxg1I/AAAAAAAAAFk/WZOS0YQ6ktA/s320/009.jpg" alt></a>配合新增的公車站牌</div><br><div style="text-align: center;"><a href="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fAcHuxg2I/AAAAAAAAAFs/bOyzsX0Vxhw/s1600-h/010.jpg" target="_blank" rel="noopener"><img src="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fAcHuxg2I/AAAAAAAAAFs/bOyzsX0Vxhw/s320/010.jpg" alt></a>從外面看月台。鐵路也逐漸爬升。</div><br><div style="text-align: center;"><a href="http://bp3.blogger.com/_zf3Yi1MVc9c/R3fAcXuxg3I/AAAAAAAAAF0/_TgnwiWdaYU/s1600-h/011.jpg" target="_blank" rel="noopener"><img src="http://bp3.blogger.com/_zf3Yi1MVc9c/R3fAcXuxg3I/AAAAAAAAAF0/_TgnwiWdaYU/s320/011.jpg" alt></a><a href="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fIBHuxhRI/AAAAAAAAAJE/-udP2MmqMMU/s1600-h/013.jpg" target="_blank" rel="noopener"><img src="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fIBHuxhRI/AAAAAAAAAJE/-udP2MmqMMU/s320/013.jpg" alt></a>位於月台中段的電梯。</div><br><div style="text-align: center;"><a href="http://bp0.blogger.com/_zf3Yi1MVc9c/R3fA0nuxg4I/AAAAAAAAAF8/3Nk_oOwaA0g/s1600-h/012.jpg" target="_blank" rel="noopener"><img src="http://bp0.blogger.com/_zf3Yi1MVc9c/R3fA0nuxg4I/AAAAAAAAAF8/3Nk_oOwaA0g/s320/012.jpg" alt></a>旁邊的走道。要通到哪裡呢？走走看囉！</div><br><div style="text-align: center;"><a href="http://bp0.blogger.com/_zf3Yi1MVc9c/R3fA0nuxg5I/AAAAAAAAAGE/i88lcLy2EYc/s1600-h/015.jpg" target="_blank" rel="noopener"><img src="http://bp0.blogger.com/_zf3Yi1MVc9c/R3fA0nuxg5I/AAAAAAAAAGE/i88lcLy2EYc/s320/015.jpg" alt></a>欄杆內標示往第一月台的指示。<br><br></div><div style="text-align: center;"><a href="http://bp1.blogger.com/_zf3Yi1MVc9c/R3fA03uxg6I/AAAAAAAAAGM/qtRIhnonznM/s1600-h/016.jpg" target="_blank" rel="noopener"><img src="http://bp1.blogger.com/_zf3Yi1MVc9c/R3fA03uxg6I/AAAAAAAAAGM/qtRIhnonznM/s320/016.jpg" alt></a>咦～好像到底了<br><br></div><div style="text-align: center;"><a href="http://bp1.blogger.com/_zf3Yi1MVc9c/R3fA03uxg7I/AAAAAAAAAGU/M_R-iF3qo7s/s1600-h/017.jpg" target="_blank" rel="noopener"><img src="http://bp1.blogger.com/_zf3Yi1MVc9c/R3fA03uxg7I/AAAAAAAAAGU/M_R-iF3qo7s/s320/017.jpg" alt></a>真的到底了～此路不通。<br>其實這裡是逃生用的通道。<br><br></div><div style="text-align: center;"><a href="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fA1Huxg8I/AAAAAAAAAGc/4uYph46WTCI/s1600-h/018.jpg" target="_blank" rel="noopener"><img src="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fA1Huxg8I/AAAAAAAAAGc/4uYph46WTCI/s320/018.jpg" alt></a>北站，位於鐵道高架橋的下方。<br>斜坡是通往月台的走道。</div><br><a href="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fZVHuxhSI/AAAAAAAAAJM/cxL9wKFDz3w/s1600-h/019.jpg" target="_blank" rel="noopener"><img src="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fZVHuxhSI/AAAAAAAAAJM/cxL9wKFDz3w/s320/019.jpg" alt></a><br><div style="text-align: center;"><a href="http://bp3.blogger.com/_zf3Yi1MVc9c/R3fZVXuxhTI/AAAAAAAAAJU/SZHY31eOQkA/s1600-h/020.jpg" target="_blank" rel="noopener"><img src="http://bp3.blogger.com/_zf3Yi1MVc9c/R3fZVXuxhTI/AAAAAAAAAJU/SZHY31eOQkA/s320/020.jpg" alt></a>紅地毯，早上通車典禮用的。</div><br><a href="http://bp2.blogger.com/_zf3Yi1MVc9c/R3faYHuxhUI/AAAAAAAAAJc/hukaVjLwSqM/s1600-h/022.jpg" target="_blank" rel="noopener"><img src="http://bp2.blogger.com/_zf3Yi1MVc9c/R3faYHuxhUI/AAAAAAAAAJc/hukaVjLwSqM/s320/022.jpg" alt></a><br><div style="text-align: center;"><a href="http://bp3.blogger.com/_zf3Yi1MVc9c/R3fcQXuxhXI/AAAAAAAAAJ0/2SmUIfXCB_s/s1600-h/023.jpg" target="_blank" rel="noopener"><img src="http://bp3.blogger.com/_zf3Yi1MVc9c/R3fcQXuxhXI/AAAAAAAAAJ0/2SmUIfXCB_s/s320/023.jpg" alt></a>臨時郵局在賣的紀念套票</div><br><a href="http://bp2.blogger.com/_zf3Yi1MVc9c/R3faYHuxhVI/AAAAAAAAAJk/anQofCirMXs/s1600-h/024.jpg" target="_blank" rel="noopener"><img src="http://bp2.blogger.com/_zf3Yi1MVc9c/R3faYHuxhVI/AAAAAAAAAJk/anQofCirMXs/s320/024.jpg" alt></a><br><div style="text-align: center;"><a href="http://bp1.blogger.com/_zf3Yi1MVc9c/R3fCM3uxhMI/AAAAAAAAAIc/Qyam9L5Hpqc/s1600-h/026.jpg" target="_blank" rel="noopener"><img src="http://bp1.blogger.com/_zf3Yi1MVc9c/R3fCM3uxhMI/AAAAAAAAAIc/Qyam9L5Hpqc/s320/026.jpg" alt></a>只停區間車</div><br><div style="text-align: center;"><a href="http://bp3.blogger.com/_zf3Yi1MVc9c/R3faYXuxhWI/AAAAAAAAAJs/oSyS3QCLoxk/s1600-h/025.jpg" target="_blank" rel="noopener"><img src="http://bp3.blogger.com/_zf3Yi1MVc9c/R3faYXuxhWI/AAAAAAAAAJs/oSyS3QCLoxk/s320/025.jpg" alt></a>到台北比從汐止車站便宜3元</div><br><div style="text-align: center;"><a href="http://bp3.blogger.com/_zf3Yi1MVc9c/R3fCNXuxhNI/AAAAAAAAAIk/zwTFHGt_3z4/s1600-h/027.jpg" target="_blank" rel="noopener"><img src="http://bp3.blogger.com/_zf3Yi1MVc9c/R3fCNXuxhNI/AAAAAAAAAIk/zwTFHGt_3z4/s320/027.jpg" alt></a>通往南下月台的走道，好像有1~200公尺吧。<br><br></div><div style="text-align: center;"><a href="http://bp3.blogger.com/_zf3Yi1MVc9c/R3fCNXuxhOI/AAAAAAAAAIs/JSzTWSquPpA/s1600-h/028.jpg" target="_blank" rel="noopener"><img src="http://bp3.blogger.com/_zf3Yi1MVc9c/R3fCNXuxhOI/AAAAAAAAAIs/JSzTWSquPpA/s320/028.jpg" alt></a>旁邊的康浩坑溪。<br><br></div><div style="text-align: center;"><a href="http://bp0.blogger.com/_zf3Yi1MVc9c/R3fCNnuxhPI/AAAAAAAAAI0/xDpTxW4t-Ig/s1600-h/029.jpg" target="_blank" rel="noopener"><img src="http://bp0.blogger.com/_zf3Yi1MVc9c/R3fCNnuxhPI/AAAAAAAAAI0/xDpTxW4t-Ig/s320/029.jpg" alt></a>以前平面段鐵道所使用的鐵橋，要預留給以後松山-七堵間的鐵路第三軌的位置。</div><br><div style="text-align: center;"><a href="http://bp0.blogger.com/_zf3Yi1MVc9c/R3fCNnuxhQI/AAAAAAAAAI8/pwI29MPIk3M/s1600-h/030.jpg" target="_blank" rel="noopener"><img src="http://bp0.blogger.com/_zf3Yi1MVc9c/R3fCNnuxhQI/AAAAAAAAAI8/pwI29MPIk3M/s320/030.jpg" alt></a>目前第三軌預定地暫時成了汽車的通道，路名為光復街。<br><br></div><div style="text-align: center;"><a href="http://bp0.blogger.com/_zf3Yi1MVc9c/R3fB1nuxhHI/AAAAAAAAAH0/dRG1B5UE2Qs/s1600-h/031.jpg" target="_blank" rel="noopener"><img src="http://bp0.blogger.com/_zf3Yi1MVc9c/R3fB1nuxhHI/AAAAAAAAAH0/dRG1B5UE2Qs/s320/031.jpg" alt></a>從北站月台入口往南站看，月台長度可停15節車廂喔。</div><br><div style="text-align: center;"><a href="http://bp0.blogger.com/_zf3Yi1MVc9c/R3fB1nuxhII/AAAAAAAAAH8/GQ5W5WIZShg/s1600-h/032.jpg" target="_blank" rel="noopener"><img src="http://bp0.blogger.com/_zf3Yi1MVc9c/R3fB1nuxhII/AAAAAAAAAH8/GQ5W5WIZShg/s320/032.jpg" alt></a>運氣真好，對向剛好來了一班區間車。<br><br></div><div style="text-align: center;"><a href="http://bp1.blogger.com/_zf3Yi1MVc9c/R3fB13uxhJI/AAAAAAAAAIE/yYdgbRivNFI/s1600-h/034.jpg" target="_blank" rel="noopener"><img src="http://bp1.blogger.com/_zf3Yi1MVc9c/R3fB13uxhJI/AAAAAAAAAIE/yYdgbRivNFI/s320/034.jpg" alt></a>月台上的佈告欄<br><br></div><div style="text-align: center;"><a href="http://bp1.blogger.com/_zf3Yi1MVc9c/R3fB13uxhKI/AAAAAAAAAIM/2UUjxQU_03g/s1600-h/036.jpg" target="_blank" rel="noopener"><img src="http://bp1.blogger.com/_zf3Yi1MVc9c/R3fB13uxhKI/AAAAAAAAAIM/2UUjxQU_03g/s320/036.jpg" alt></a>往南站看過去。</div><br><div style="text-align: center;"><a href="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fB2HuxhLI/AAAAAAAAAIU/pYki8PD5AnY/s1600-h/037.jpg" target="_blank" rel="noopener"><img src="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fB2HuxhLI/AAAAAAAAAIU/pYki8PD5AnY/s320/037.jpg" alt></a>列車進站。</div><br><div style="text-align: center;"><a href="http://bp1.blogger.com/_zf3Yi1MVc9c/R3fBe3uxhCI/AAAAAAAAAHM/pF2v8XJG3xY/s1600-h/038.jpg" target="_blank" rel="noopener"><img src="http://bp1.blogger.com/_zf3Yi1MVc9c/R3fBe3uxhCI/AAAAAAAAAHM/pF2v8XJG3xY/s320/038.jpg" alt></a></div><a href="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fBfHuxhDI/AAAAAAAAAHU/208S4MioAdg/s1600-h/039.jpg" target="_blank" rel="noopener"><img src="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fBfHuxhDI/AAAAAAAAAHU/208S4MioAdg/s320/039.jpg" alt></a><br><div style="text-align: center;"><a href="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fBfHuxhEI/AAAAAAAAAHc/cNbvFYN-afM/s1600-h/040.jpg" target="_blank" rel="noopener"><img src="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fBfHuxhEI/AAAAAAAAAHc/cNbvFYN-afM/s320/040.jpg" alt></a>剛好一班區間車離站，另一班即將進站</div><br><div style="text-align: center;"><a href="http://bp3.blogger.com/_zf3Yi1MVc9c/R3fBfXuxhFI/AAAAAAAAAHk/km9UeBEW48U/s1600-h/041.jpg" target="_blank" rel="noopener"><img src="http://bp3.blogger.com/_zf3Yi1MVc9c/R3fBfXuxhFI/AAAAAAAAAHk/km9UeBEW48U/s320/041.jpg" alt></a>從南站月台入口往月台看<br><br></div><a href="http://bp0.blogger.com/_zf3Yi1MVc9c/R3fBKnuxhAI/AAAAAAAAAG8/c_sdtNE9Tbw/s1600-h/044.jpg" target="_blank" rel="noopener"><img src="http://bp0.blogger.com/_zf3Yi1MVc9c/R3fBKnuxhAI/AAAAAAAAAG8/c_sdtNE9Tbw/s320/044.jpg" alt></a><br><a href="http://bp1.blogger.com/_zf3Yi1MVc9c/R3fBK3uxhBI/AAAAAAAAAHE/j26agFGdVR4/s1600-h/043.jpg" target="_blank" rel="noopener"><img src="http://bp1.blogger.com/_zf3Yi1MVc9c/R3fBK3uxhBI/AAAAAAAAAHE/j26agFGdVR4/s320/043.jpg" alt></a><br><div style="text-align: center;"><a href="http://bp0.blogger.com/_zf3Yi1MVc9c/R3fBfnuxhGI/AAAAAAAAAHs/DBuv-bAJiII/s1600-h/042.jpg" target="_blank" rel="noopener"><img src="http://bp0.blogger.com/_zf3Yi1MVc9c/R3fBfnuxhGI/AAAAAAAAAHs/DBuv-bAJiII/s320/042.jpg" alt></a>往南站<br><br></div><div style="text-align: center;"><a href="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fBKHuxg9I/AAAAAAAAAGk/-FFGRfupGKk/s1600-h/052.jpg" target="_blank" rel="noopener"><img src="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fBKHuxg9I/AAAAAAAAAGk/-FFGRfupGKk/s320/052.jpg" alt></a>紀念車票</div><br><div style="text-align: center;"><a href="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fBKHuxg-I/AAAAAAAAAGs/8vGIUGPIYZI/s1600-h/050.jpg" target="_blank" rel="noopener"><img src="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fBKHuxg-I/AAAAAAAAAGs/8vGIUGPIYZI/s320/050.jpg" alt></a>紀念郵戳</div><br><div style="text-align: center;"><a href="http://bp3.blogger.com/_zf3Yi1MVc9c/R3fBKXuxg_I/AAAAAAAAAG0/Ke2bPBPpRtg/s1600-h/048.jpg" target="_blank" rel="noopener"><img src="http://bp3.blogger.com/_zf3Yi1MVc9c/R3fBKXuxg_I/AAAAAAAAAG0/Ke2bPBPpRtg/s320/048.jpg" alt></a>紀念郵票</div>
-      
+<div style="text-align: center;"><a href="http://bp1.blogger.com/_zf3Yi1MVc9c/R3e_53uxguI/AAAAAAAAAEs/Zwm99MdMUdg/s1600-h/001.jpg" target="_blank" rel="noopener"><img src="http://bp1.blogger.com/_zf3Yi1MVc9c/R3e_53uxguI/AAAAAAAAAEs/Zwm99MdMUdg/s320/001.jpg" alt=""></a>這是南站體，位於鐵路的平面段，所以要在這裡搭車必須先上到二樓再往下走到月台。</div><br><div style="text-align: center;"><a href="http://bp1.blogger.com/_zf3Yi1MVc9c/R3e_53uxgvI/AAAAAAAAAE0/oW-s7wEcrgU/s1600-h/002.jpg" target="_blank" rel="noopener"><img src="http://bp1.blogger.com/_zf3Yi1MVc9c/R3e_53uxgvI/AAAAAAAAAE0/oW-s7wEcrgU/s320/002.jpg" alt=""></a></div><br><div style="text-align: center;"><a href="http://bp2.blogger.com/_zf3Yi1MVc9c/R3e_6HuxgwI/AAAAAAAAAE8/v8_BTcQuDlk/s1600-h/003.jpg" target="_blank" rel="noopener"><img src="http://bp2.blogger.com/_zf3Yi1MVc9c/R3e_6HuxgwI/AAAAAAAAAE8/v8_BTcQuDlk/s320/003.jpg" alt=""></a>南站體的入口，不過英文譯名…”Sike” station<br><br></div><div style="text-align: center;"><a href="http://bp2.blogger.com/_zf3Yi1MVc9c/R3e_6HuxgxI/AAAAAAAAAFE/ckIuu6Fj2AE/s1600-h/004.jpg" target="_blank" rel="noopener"><img src="http://bp2.blogger.com/_zf3Yi1MVc9c/R3e_6HuxgxI/AAAAAAAAAFE/ckIuu6Fj2AE/s320/004.jpg" alt=""></a>南站體的大廳購票處，只有兩台自動購票機。</div><br><div style="text-align: center;"><a href="http://bp3.blogger.com/_zf3Yi1MVc9c/R3e_6XuxgyI/AAAAAAAAAFM/sRJo1pmjh9c/s1600-h/006.jpg" target="_blank" rel="noopener"><img src="http://bp3.blogger.com/_zf3Yi1MVc9c/R3e_6XuxgyI/AAAAAAAAAFM/sRJo1pmjh9c/s320/006.jpg" alt=""></a>剪票口<br>南站今天有兩位服務人員，不過不知道是假日還是第一天啟用的關係，南站看起來很冷清。</div><br><div style="text-align: center;"><a href="http://bp1.blogger.com/_zf3Yi1MVc9c/R3fAb3uxgzI/AAAAAAAAAFU/ppLsuy65neg/s1600-h/007.jpg" target="_blank" rel="noopener"><img src="http://bp1.blogger.com/_zf3Yi1MVc9c/R3fAb3uxgzI/AAAAAAAAAFU/ppLsuy65neg/s320/007.jpg" alt=""></a>從南站往高雄的方向看<br>左手邊的建築就是站名的由來，不過它其實叫做遠東科技園區，宏碁acer的總公司就位在這個園區裡。遠方的橋樑則是北二高。</div><br><div style="text-align: center;"><a href="http://bp1.blogger.com/_zf3Yi1MVc9c/R3fAb3uxg0I/AAAAAAAAAFc/LUMuth_YhmA/s1600-h/008.jpg" target="_blank" rel="noopener"><img src="http://bp1.blogger.com/_zf3Yi1MVc9c/R3fAb3uxg0I/AAAAAAAAAFc/LUMuth_YhmA/s320/008.jpg" alt=""></a>南站往月台方向看<br>左右兩邊就是通往月台的走道，不過不清楚為何要這樣設計，因為這樣一來得走好遠才能到月台。</div><br><div style="text-align: center;"><a href="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fAcHuxg1I/AAAAAAAAAFk/WZOS0YQ6ktA/s1600-h/009.jpg" target="_blank" rel="noopener"><img src="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fAcHuxg1I/AAAAAAAAAFk/WZOS0YQ6ktA/s320/009.jpg" alt=""></a>配合新增的公車站牌</div><br><div style="text-align: center;"><a href="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fAcHuxg2I/AAAAAAAAAFs/bOyzsX0Vxhw/s1600-h/010.jpg" target="_blank" rel="noopener"><img src="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fAcHuxg2I/AAAAAAAAAFs/bOyzsX0Vxhw/s320/010.jpg" alt=""></a>從外面看月台。鐵路也逐漸爬升。</div><br><div style="text-align: center;"><a href="http://bp3.blogger.com/_zf3Yi1MVc9c/R3fAcXuxg3I/AAAAAAAAAF0/_TgnwiWdaYU/s1600-h/011.jpg" target="_blank" rel="noopener"><img src="http://bp3.blogger.com/_zf3Yi1MVc9c/R3fAcXuxg3I/AAAAAAAAAF0/_TgnwiWdaYU/s320/011.jpg" alt=""></a><a href="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fIBHuxhRI/AAAAAAAAAJE/-udP2MmqMMU/s1600-h/013.jpg" target="_blank" rel="noopener"><img src="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fIBHuxhRI/AAAAAAAAAJE/-udP2MmqMMU/s320/013.jpg" alt=""></a>位於月台中段的電梯。</div><br><div style="text-align: center;"><a href="http://bp0.blogger.com/_zf3Yi1MVc9c/R3fA0nuxg4I/AAAAAAAAAF8/3Nk_oOwaA0g/s1600-h/012.jpg" target="_blank" rel="noopener"><img src="http://bp0.blogger.com/_zf3Yi1MVc9c/R3fA0nuxg4I/AAAAAAAAAF8/3Nk_oOwaA0g/s320/012.jpg" alt=""></a>旁邊的走道。要通到哪裡呢？走走看囉！</div><br><div style="text-align: center;"><a href="http://bp0.blogger.com/_zf3Yi1MVc9c/R3fA0nuxg5I/AAAAAAAAAGE/i88lcLy2EYc/s1600-h/015.jpg" target="_blank" rel="noopener"><img src="http://bp0.blogger.com/_zf3Yi1MVc9c/R3fA0nuxg5I/AAAAAAAAAGE/i88lcLy2EYc/s320/015.jpg" alt=""></a>欄杆內標示往第一月台的指示。<br><br></div><div style="text-align: center;"><a href="http://bp1.blogger.com/_zf3Yi1MVc9c/R3fA03uxg6I/AAAAAAAAAGM/qtRIhnonznM/s1600-h/016.jpg" target="_blank" rel="noopener"><img src="http://bp1.blogger.com/_zf3Yi1MVc9c/R3fA03uxg6I/AAAAAAAAAGM/qtRIhnonznM/s320/016.jpg" alt=""></a>咦～好像到底了<br><br></div><div style="text-align: center;"><a href="http://bp1.blogger.com/_zf3Yi1MVc9c/R3fA03uxg7I/AAAAAAAAAGU/M_R-iF3qo7s/s1600-h/017.jpg" target="_blank" rel="noopener"><img src="http://bp1.blogger.com/_zf3Yi1MVc9c/R3fA03uxg7I/AAAAAAAAAGU/M_R-iF3qo7s/s320/017.jpg" alt=""></a>真的到底了～此路不通。<br>其實這裡是逃生用的通道。<br><br></div><div style="text-align: center;"><a href="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fA1Huxg8I/AAAAAAAAAGc/4uYph46WTCI/s1600-h/018.jpg" target="_blank" rel="noopener"><img src="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fA1Huxg8I/AAAAAAAAAGc/4uYph46WTCI/s320/018.jpg" alt=""></a>北站，位於鐵道高架橋的下方。<br>斜坡是通往月台的走道。</div><br><a href="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fZVHuxhSI/AAAAAAAAAJM/cxL9wKFDz3w/s1600-h/019.jpg" target="_blank" rel="noopener"><img src="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fZVHuxhSI/AAAAAAAAAJM/cxL9wKFDz3w/s320/019.jpg" alt=""></a><br><div style="text-align: center;"><a href="http://bp3.blogger.com/_zf3Yi1MVc9c/R3fZVXuxhTI/AAAAAAAAAJU/SZHY31eOQkA/s1600-h/020.jpg" target="_blank" rel="noopener"><img src="http://bp3.blogger.com/_zf3Yi1MVc9c/R3fZVXuxhTI/AAAAAAAAAJU/SZHY31eOQkA/s320/020.jpg" alt=""></a>紅地毯，早上通車典禮用的。</div><br><a href="http://bp2.blogger.com/_zf3Yi1MVc9c/R3faYHuxhUI/AAAAAAAAAJc/hukaVjLwSqM/s1600-h/022.jpg" target="_blank" rel="noopener"><img src="http://bp2.blogger.com/_zf3Yi1MVc9c/R3faYHuxhUI/AAAAAAAAAJc/hukaVjLwSqM/s320/022.jpg" alt=""></a><br><div style="text-align: center;"><a href="http://bp3.blogger.com/_zf3Yi1MVc9c/R3fcQXuxhXI/AAAAAAAAAJ0/2SmUIfXCB_s/s1600-h/023.jpg" target="_blank" rel="noopener"><img src="http://bp3.blogger.com/_zf3Yi1MVc9c/R3fcQXuxhXI/AAAAAAAAAJ0/2SmUIfXCB_s/s320/023.jpg" alt=""></a>臨時郵局在賣的紀念套票</div><br><a href="http://bp2.blogger.com/_zf3Yi1MVc9c/R3faYHuxhVI/AAAAAAAAAJk/anQofCirMXs/s1600-h/024.jpg" target="_blank" rel="noopener"><img src="http://bp2.blogger.com/_zf3Yi1MVc9c/R3faYHuxhVI/AAAAAAAAAJk/anQofCirMXs/s320/024.jpg" alt=""></a><br><div style="text-align: center;"><a href="http://bp1.blogger.com/_zf3Yi1MVc9c/R3fCM3uxhMI/AAAAAAAAAIc/Qyam9L5Hpqc/s1600-h/026.jpg" target="_blank" rel="noopener"><img src="http://bp1.blogger.com/_zf3Yi1MVc9c/R3fCM3uxhMI/AAAAAAAAAIc/Qyam9L5Hpqc/s320/026.jpg" alt=""></a>只停區間車</div><br><div style="text-align: center;"><a href="http://bp3.blogger.com/_zf3Yi1MVc9c/R3faYXuxhWI/AAAAAAAAAJs/oSyS3QCLoxk/s1600-h/025.jpg" target="_blank" rel="noopener"><img src="http://bp3.blogger.com/_zf3Yi1MVc9c/R3faYXuxhWI/AAAAAAAAAJs/oSyS3QCLoxk/s320/025.jpg" alt=""></a>到台北比從汐止車站便宜3元</div><br><div style="text-align: center;"><a href="http://bp3.blogger.com/_zf3Yi1MVc9c/R3fCNXuxhNI/AAAAAAAAAIk/zwTFHGt_3z4/s1600-h/027.jpg" target="_blank" rel="noopener"><img src="http://bp3.blogger.com/_zf3Yi1MVc9c/R3fCNXuxhNI/AAAAAAAAAIk/zwTFHGt_3z4/s320/027.jpg" alt=""></a>通往南下月台的走道，好像有1~200公尺吧。<br><br></div><div style="text-align: center;"><a href="http://bp3.blogger.com/_zf3Yi1MVc9c/R3fCNXuxhOI/AAAAAAAAAIs/JSzTWSquPpA/s1600-h/028.jpg" target="_blank" rel="noopener"><img src="http://bp3.blogger.com/_zf3Yi1MVc9c/R3fCNXuxhOI/AAAAAAAAAIs/JSzTWSquPpA/s320/028.jpg" alt=""></a>旁邊的康浩坑溪。<br><br></div><div style="text-align: center;"><a href="http://bp0.blogger.com/_zf3Yi1MVc9c/R3fCNnuxhPI/AAAAAAAAAI0/xDpTxW4t-Ig/s1600-h/029.jpg" target="_blank" rel="noopener"><img src="http://bp0.blogger.com/_zf3Yi1MVc9c/R3fCNnuxhPI/AAAAAAAAAI0/xDpTxW4t-Ig/s320/029.jpg" alt=""></a>以前平面段鐵道所使用的鐵橋，要預留給以後松山-七堵間的鐵路第三軌的位置。</div><br><div style="text-align: center;"><a href="http://bp0.blogger.com/_zf3Yi1MVc9c/R3fCNnuxhQI/AAAAAAAAAI8/pwI29MPIk3M/s1600-h/030.jpg" target="_blank" rel="noopener"><img src="http://bp0.blogger.com/_zf3Yi1MVc9c/R3fCNnuxhQI/AAAAAAAAAI8/pwI29MPIk3M/s320/030.jpg" alt=""></a>目前第三軌預定地暫時成了汽車的通道，路名為光復街。<br><br></div><div style="text-align: center;"><a href="http://bp0.blogger.com/_zf3Yi1MVc9c/R3fB1nuxhHI/AAAAAAAAAH0/dRG1B5UE2Qs/s1600-h/031.jpg" target="_blank" rel="noopener"><img src="http://bp0.blogger.com/_zf3Yi1MVc9c/R3fB1nuxhHI/AAAAAAAAAH0/dRG1B5UE2Qs/s320/031.jpg" alt=""></a>從北站月台入口往南站看，月台長度可停15節車廂喔。</div><br><div style="text-align: center;"><a href="http://bp0.blogger.com/_zf3Yi1MVc9c/R3fB1nuxhII/AAAAAAAAAH8/GQ5W5WIZShg/s1600-h/032.jpg" target="_blank" rel="noopener"><img src="http://bp0.blogger.com/_zf3Yi1MVc9c/R3fB1nuxhII/AAAAAAAAAH8/GQ5W5WIZShg/s320/032.jpg" alt=""></a>運氣真好，對向剛好來了一班區間車。<br><br></div><div style="text-align: center;"><a href="http://bp1.blogger.com/_zf3Yi1MVc9c/R3fB13uxhJI/AAAAAAAAAIE/yYdgbRivNFI/s1600-h/034.jpg" target="_blank" rel="noopener"><img src="http://bp1.blogger.com/_zf3Yi1MVc9c/R3fB13uxhJI/AAAAAAAAAIE/yYdgbRivNFI/s320/034.jpg" alt=""></a>月台上的佈告欄<br><br></div><div style="text-align: center;"><a href="http://bp1.blogger.com/_zf3Yi1MVc9c/R3fB13uxhKI/AAAAAAAAAIM/2UUjxQU_03g/s1600-h/036.jpg" target="_blank" rel="noopener"><img src="http://bp1.blogger.com/_zf3Yi1MVc9c/R3fB13uxhKI/AAAAAAAAAIM/2UUjxQU_03g/s320/036.jpg" alt=""></a>往南站看過去。</div><br><div style="text-align: center;"><a href="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fB2HuxhLI/AAAAAAAAAIU/pYki8PD5AnY/s1600-h/037.jpg" target="_blank" rel="noopener"><img src="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fB2HuxhLI/AAAAAAAAAIU/pYki8PD5AnY/s320/037.jpg" alt=""></a>列車進站。</div><br><div style="text-align: center;"><a href="http://bp1.blogger.com/_zf3Yi1MVc9c/R3fBe3uxhCI/AAAAAAAAAHM/pF2v8XJG3xY/s1600-h/038.jpg" target="_blank" rel="noopener"><img src="http://bp1.blogger.com/_zf3Yi1MVc9c/R3fBe3uxhCI/AAAAAAAAAHM/pF2v8XJG3xY/s320/038.jpg" alt=""></a></div><a href="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fBfHuxhDI/AAAAAAAAAHU/208S4MioAdg/s1600-h/039.jpg" target="_blank" rel="noopener"><img src="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fBfHuxhDI/AAAAAAAAAHU/208S4MioAdg/s320/039.jpg" alt=""></a><br><div style="text-align: center;"><a href="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fBfHuxhEI/AAAAAAAAAHc/cNbvFYN-afM/s1600-h/040.jpg" target="_blank" rel="noopener"><img src="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fBfHuxhEI/AAAAAAAAAHc/cNbvFYN-afM/s320/040.jpg" alt=""></a>剛好一班區間車離站，另一班即將進站</div><br><div style="text-align: center;"><a href="http://bp3.blogger.com/_zf3Yi1MVc9c/R3fBfXuxhFI/AAAAAAAAAHk/km9UeBEW48U/s1600-h/041.jpg" target="_blank" rel="noopener"><img src="http://bp3.blogger.com/_zf3Yi1MVc9c/R3fBfXuxhFI/AAAAAAAAAHk/km9UeBEW48U/s320/041.jpg" alt=""></a>從南站月台入口往月台看<br><br></div><a href="http://bp0.blogger.com/_zf3Yi1MVc9c/R3fBKnuxhAI/AAAAAAAAAG8/c_sdtNE9Tbw/s1600-h/044.jpg" target="_blank" rel="noopener"><img src="http://bp0.blogger.com/_zf3Yi1MVc9c/R3fBKnuxhAI/AAAAAAAAAG8/c_sdtNE9Tbw/s320/044.jpg" alt=""></a><br><a href="http://bp1.blogger.com/_zf3Yi1MVc9c/R3fBK3uxhBI/AAAAAAAAAHE/j26agFGdVR4/s1600-h/043.jpg" target="_blank" rel="noopener"><img src="http://bp1.blogger.com/_zf3Yi1MVc9c/R3fBK3uxhBI/AAAAAAAAAHE/j26agFGdVR4/s320/043.jpg" alt=""></a><br><div style="text-align: center;"><a href="http://bp0.blogger.com/_zf3Yi1MVc9c/R3fBfnuxhGI/AAAAAAAAAHs/DBuv-bAJiII/s1600-h/042.jpg" target="_blank" rel="noopener"><img src="http://bp0.blogger.com/_zf3Yi1MVc9c/R3fBfnuxhGI/AAAAAAAAAHs/DBuv-bAJiII/s320/042.jpg" alt=""></a>往南站<br><br></div><div style="text-align: center;"><a href="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fBKHuxg9I/AAAAAAAAAGk/-FFGRfupGKk/s1600-h/052.jpg" target="_blank" rel="noopener"><img src="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fBKHuxg9I/AAAAAAAAAGk/-FFGRfupGKk/s320/052.jpg" alt=""></a>紀念車票</div><br><div style="text-align: center;"><a href="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fBKHuxg-I/AAAAAAAAAGs/8vGIUGPIYZI/s1600-h/050.jpg" target="_blank" rel="noopener"><img src="http://bp2.blogger.com/_zf3Yi1MVc9c/R3fBKHuxg-I/AAAAAAAAAGs/8vGIUGPIYZI/s320/050.jpg" alt=""></a>紀念郵戳</div><br><div style="text-align: center;"><a href="http://bp3.blogger.com/_zf3Yi1MVc9c/R3fBKXuxg_I/AAAAAAAAAG0/Ke2bPBPpRtg/s1600-h/048.jpg" target="_blank" rel="noopener"><img src="http://bp3.blogger.com/_zf3Yi1MVc9c/R3fBKXuxg_I/AAAAAAAAAG0/Ke2bPBPpRtg/s320/048.jpg" alt=""></a>紀念郵票</div>
     </div>
 
     
-
-    
-    
-    
-
-    
-
-    
-      
     
     
 
-    
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/鐵道/" rel="tag"># 鐵道</a>
-          
-        </div>
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E9%90%B5%E9%81%93/" rel="tag"># 鐵道</a>
           </div>
 
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2012/05/07/sql-database-evaluation/" rel="prev" title="SQL 資料庫評估">
-                SQL 資料庫評估 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-  </div>
-
-
-          </div>
-          
-
-  
-
-
-
-        </div>
         
-          
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+                <a href="/2012/05/07/sql-database-evaluation/" rel="prev" title="SQL 資料庫評估">
+                  SQL 資料庫評估 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+      </footer>
+    
+  </article>
   
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
+  
+  
+
   </div>
 
-  <aside id="sidebar" class="sidebar">
-    
+
+          </div>
+          
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
     <div class="sidebar-inner">
 
-      
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
 
-      
-
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <p class="site-author-name" itemprop="name">tbin987</p>
-              <p class="site-description motion-element" itemprop="description"></p>
-          </div>
-
-          
-            <nav class="site-state motion-element">
-              
-                <div class="site-state-item site-state-posts">
-                
-                  <a href="/archives/">
-                
-                    <span class="site-state-item-count">8</span>
-                    <span class="site-state-item-name">posts</span>
-                  </a>
-                </div>
-              
-
-              
-                
-                
-                <div class="site-state-item site-state-categories">
-                  <a href="/categories/index.html">
-                    
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">4</span>
-                    <span class="site-state-item-name">categories</span>
-                  </a>
-                </div>
-              
-
-              
-                
-                
-                <div class="site-state-item site-state-tags">
-                  <a href="/tags/index.html">
-                    
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">16</span>
-                    <span class="site-state-item-name">tags</span>
-                  </a>
-                </div>
-              
-            </nav>
-          
-
-          
-            <div class="feed-link motion-element">
-              <a href="/atom.xml" rel="alternate">
-                <i class="fa fa-rss"></i>
-                RSS
-              </a>
-            </div>
-          
-
-          
-            <div class="links-of-author motion-element">
-              
-                <span class="links-of-author-item">
-                  
-                  
-                    
-                  
-                  
-                    
-                  
-                  <a href="https://github.com/tbin987" title="GitHub &rarr; https://github.com/tbin987" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
-                </span>
-              
-            </div>
-          
-
-          
-
-          
-          
-
-          
-            
-          
-          
-
-        </div>
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
       </div>
+      <!--/noindex-->
 
-      
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="site-author-image" itemprop="image" alt="tbin987"
+    src="/images/avatar.gif">
+  <p class="site-author-name" itemprop="name">tbin987</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">16</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/tbin987" title="GitHub &rarr; https://github.com/tbin987" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+  </div>
 
-      
+
+
+      </div>
 
     </div>
   </aside>
+  <div id="sidebar-dimmer"></div>
 
 
-        
       </div>
     </main>
 
-    <footer id="footer" class="footer">
+    <footer class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
-  <span class="with-love" id="animate">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">tbin987</span>
-
-  
-
-  
 </div>
-
-
-  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.8.0</div>
-
-
-
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.0.0
+  </div>
   <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v7.0.0</div>
-
-
-
+  <div class="theme-info">Theme – <a href="https://mist.theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v7.4.2
+  </div>
 
         
+
+
+
+
 
 
 
@@ -799,126 +450,36 @@
         
       </div>
     </footer>
-
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
-
-    
-
-    
-
-    
   </div>
 
   
-
-<script>
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  <script src="/lib/jquery/index.js?v=2.1.3"></script>
-
-  
+  <script src="/lib/anime.min.js?v=3.1.0"></script>
   <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
   <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-
-  
-
-
-  <script src="/js/src/utils.js?v=7.0.0"></script>
-
-  <script src="/js/src/motion.js?v=7.0.0"></script>
-
-
-
-  
-  
-
-
-  <script src="/js/src/schemes/muse.js?v=7.0.0"></script>
-
-
-
-
-  
-  <script src="/js/src/scrollspy.js?v=7.0.0"></script>
-<script src="/js/src/post-details.js?v=7.0.0"></script>
+<script src="/js/utils.js?v=7.4.2"></script><script src="/js/motion.js?v=7.4.2"></script>
+<script src="/js/schemes/muse.js?v=7.4.2"></script>
+<script src="/js/next-boot.js?v=7.4.2"></script>
 
 
 
   
 
 
-  <script src="/js/src/bootstrap.js?v=7.0.0"></script>
-
-
-
-  
-
-
-  
-
-
-  
 
 
 
 
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
 
   
 
